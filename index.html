@@ -8,25 +8,37 @@
         <!--FontAwesome-->
         <script src="https://kit.fontawesome.com/28350a576b.js" crossorigin="anonymous"></script>
 
+        <!--GoogleFonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap" rel="stylesheet">
+
         <!--Styles-->
-        <link rel="stylesheet" type="text/css" href="assets/styles/style.css"/>
+        <link rel="stylesheet" type="text/css" href="assets/style/css/dist/main.min.css"/>
 
     </head>
     <body>
-        <header>
-            <nav>
+        <header class="header">
+            <nav class="header__website-name">
                 <a href="index.html">
-                    <img src="assets/images/logo/ohmyfood.svg" alt="Ohmyfood!"/>
+                    <span class="ohmyfood">ohmyfood</span>
                 </a>
             </nav>
 
-            <p><i class="fas fa-map-marker-alt"></i>Paris, Belleville</p>
+            <div class="header__divider"></div>
+            
+            <section class="header__map-area">
+                <p><i class="fas fa-map-marker-alt header__map-area--marker"></i>Paris, Belleville</p>
+            </section>
 
-            <h1>Réservez le menu qui vous convient</h1>
-            <p>Découvrez des restaurant d'exception sélectionnés par nos soins.</p>
-            <nav>
-                <a href="#restaurants">Explorer nos restaurants</a>
-            </nav>
+            <section class="header__company-presentation">
+                <h1>Réservez le menu qui vous convient</h1>
+                <p>Découvrez des restaurant d'exception sélectionnés par nos soins.</p>
+                <nav>
+                    <a href="#restaurants">
+                        <button type="submit" class="header__explore-link-button">Explorer nos restaurants</button>
+                    </a>
+                </nav>
+            </section>
         </header>
 
         <section>

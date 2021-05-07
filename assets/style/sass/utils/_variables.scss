@@ -1,0 +1,20 @@
+$color-primary: #9356dc;
+$color-secondary: #ff79da;
+$color-tertiary: #99e2d0;
+$color-accent: #353535;
+
+$colors: (
+    primary: (
+        base: $color-primary,
+    ),
+    secondary: (
+        base: $color-secondary,
+    ),
+    tertiary: (
+        base: $color-tertiary,
+    ),
+    accent: (
+        base: $color-accent,
+        light: lighten($color-accent, 75),
+    ),
+)
