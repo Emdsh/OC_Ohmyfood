@@ -32,10 +32,8 @@ h1, h2 {
 }
 .header__website-name {
   padding: 1rem 0 0.5rem 0;
-}
-.header__divider {
-  height: 3px;
-  background-image: linear-gradient(#b5b5b5, #e8e8e8);
+  box-shadow: 0 10px 10px -10px #b5b5b5;
+  position: relative;
 }
 .header__map-area {
   background-color: #e8e8e8;
