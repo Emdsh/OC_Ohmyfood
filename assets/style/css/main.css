@@ -38,6 +38,8 @@ h1, h2 {
 .header__map-area {
   background-color: #e8e8e8;
   padding: 1rem 0;
+}
+.header__map-area a {
   color: #353535;
   font-weight: bold;
 }

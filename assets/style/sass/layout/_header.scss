@@ -13,8 +13,11 @@
     &__map-area {
         background-color: lighten(color(accent), 70);
         padding: 1rem 0;
-        color: color(accent);
-        font-weight: bold;
+
+        a {
+            color: color(accent);
+            font-weight: bold;
+        }
 
         &--marker {
             margin-right: 1rem;
