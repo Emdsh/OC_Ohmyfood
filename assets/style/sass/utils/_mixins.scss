@@ -1,0 +1,14 @@
+@use './variables' as *;
+@use './functions' as *;
+
+@mixin area-padding {
+    padding: 2.5rem 1rem;
+}
+
+@mixin shadow {
+    box-shadow: 0 5px 5px 0 lighten(color(accent), 65);
+
+    &:hover {
+        box-shadow: 0 5px 5px 0 lighten(color(accent), 60);
+    }
+}

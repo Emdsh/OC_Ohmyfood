@@ -6,12 +6,15 @@ $color-accent: #353535;
 $colors: (
     primary: (
         base: $color-primary,
+        light: lighten($color-primary, 35),
     ),
     secondary: (
         base: $color-secondary,
+        light: lighten($color-secondary, 35),
     ),
     tertiary: (
         base: $color-tertiary,
+        light: lighten($color-tertiary, 35),
     ),
     accent: (
         base: $color-accent,

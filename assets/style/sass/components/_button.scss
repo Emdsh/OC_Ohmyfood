@@ -2,17 +2,16 @@
 
 @mixin main-button {
     background-image: linear-gradient(to bottom right, color(secondary), color(primary));
-    padding: 1rem;
+    padding: 1rem 1.5rem;
     margin: 1rem;
     color: white;
     border-radius: 1.5rem;
     font-size: 1rem;
     font-weight: bold;
-    box-shadow: 0 5px 5px 0 lighten(color(accent), 50);
+    @include shadow;
     cursor: pointer;
 
     &:hover {
         background-image: linear-gradient(to bottom right, lighten(color(secondary), 2.5), lighten(color(primary), 2.5));
-        box-shadow: 0 5px 5px 0 lighten(color(accent), 40);
     }
 }
