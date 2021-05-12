@@ -11,7 +11,7 @@ ul, ol {
 
 a {
   text-decoration: none;
-  color: #000;
+  color: black;
 }
 
 * {
@@ -118,6 +118,32 @@ h1, h2 {
 }
 .header__explore-link-button:hover {
   background-image: linear-gradient(to bottom right, #ff86de, #9a61de);
+}
+
+.footer {
+  background-color: #353535;
+  padding: 2.5rem 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.footer__links {
+  margin-top: 1rem;
+}
+.footer__links li {
+  margin-bottom: 0.5rem;
+}
+.footer a {
+  color: white;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+.footer .icon {
+  width: 1rem;
+  margin-right: 1rem;
+}
+.footer .ohmyfood--small {
+  font-size: 1.25rem;
 }
 
 .how-to {
