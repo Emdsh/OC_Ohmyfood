@@ -7,17 +7,21 @@ $colors: (
     primary: (
         base: $color-primary,
         light: lighten($color-primary, 35),
+        dark: darken($color-tertiary, 40),
     ),
     secondary: (
         base: $color-secondary,
         light: lighten($color-secondary, 35),
+        dark: darken($color-tertiary, 40),
     ),
     tertiary: (
         base: $color-tertiary,
         light: lighten($color-tertiary, 35),
+        dark: darken($color-tertiary, 40),
     ),
     accent: (
         base: $color-accent,
         light: lighten($color-accent, 75),
+        dark: darken($color-tertiary, 40),
     ),
 )
