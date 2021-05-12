@@ -6,39 +6,50 @@
         <title>Ohmyfood!</title>
 
         <!--FontAwesome-->
-        <script src="https://kit.fontawesome.com/28350a576b.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/28350a576b.js" crossorigin="anonymous" defer="true"></script>
+
+        <!--GoogleFonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap" rel="stylesheet">
 
         <!--Styles-->
-        <link rel="stylesheet" type="text/css" href="assets/styles/style.css"/>
+        <link rel="stylesheet" type="text/css" href="assets/style/css/dist/main.min.css"/>
 
     </head>
+
     <body>
-        <header>
-            <nav>
+        <header class="header">
+            <nav class="header__website-name">
                 <a href="index.html">
-                    <img src="assets/images/logo/ohmyfood.svg" alt="Ohmyfood!"/>
+                    <span class="ohmyfood">ohmyfood</span>
                 </a>
             </nav>
+            
+            <section class="header__map-area">
+                <a href="geo:48.873889,2.385278"><i class="fas fa-map-marker-alt header__map-area--marker"></i>Paris, Belleville</a>
+            </section>
 
-            <p><i class="fas fa-map-marker-alt"></i>Paris, Belleville</p>
-
-            <h1>Réservez le menu qui vous convient</h1>
-            <p>Découvrez des restaurant d'exception sélectionnés par nos soins.</p>
-            <nav>
-                <a href="#restaurants">Explorer nos restaurants</a>
-            </nav>
+            <section class="header__company-presentation">
+                <h1>Réservez le menu qui vous convient</h1>
+                <p>Découvrez des restaurant d'exception sélectionnés par nos soins.</p>
+                <nav>
+                    <a href="#restaurants">
+                        <button type="submit" class="header__explore-link-button">Explorer nos restaurants</button>
+                    </a>
+                </nav>
+            </section>
         </header>
 
-        <section>
+        <section class="how-to">
             <h2>Fonctionnement</h2>
-            <ol>
-                <li><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</li>
-                <li><i class="fas fa-list-ul"></i>Composez votre menu</li>
-                <li><i class="fas fa-store"></i>Dégustez au restaurant</li>
+            <ol class="how-to__list">
+                <li><i class="fas fa-mobile-alt icon"></i>Choisissez un restaurant</li>
+                <li><i class="fas fa-list-ul icon"></i>Composez votre menu</li>
+                <li><i class="fas fa-store icon"></i>Dégustez au restaurant</li>
             </ol>
         </section>
 
-        <main id="restaurants">
+        <main id="restaurants" class="restaurant">
             <h2>Restaurants</h2>
             <nav>
                 <ul>
@@ -46,22 +57,17 @@
                         <a href="menu/la-palette-du-gout/index.html">
 
                             <article>
-                                <figure>
+                                <figure class="restaurant__tile">
+                                    <p class="restaurant__tile--new">Nouveau</p>
                                     <img src="assets/images/restaurants/palette_du_gout.jpg" alt="La palette du goût">
 
                                     <figcaption>
-                                        <div>
-                                            <p>Nouveau</p>
-                                        </div>
-
                                         <div>
                                             <h3>La palette du goût</h3>
                                             <p>Ménilmontant</p>
                                         </div>
 
-                                        <div>
-                                            <i class="far fa-heart"></i>
-                                        </div>
+                                        <i class="fas fa-heart heart"></i>
                                     </figcaption>
                                 </figure>
                             </article>
@@ -72,22 +78,17 @@
                         <a href="menu/la-note-enchantee/index.html">
 
                             <article>
-                                <figure>
+                                <figure class="restaurant__tile">
+                                    <p class="restaurant__tile--new">Nouveau</p>
                                     <img src="assets/images/restaurants/note_enchantee.jpg" alt="La note enchantée">
 
                                     <figcaption>
-                                        <div>
-                                            <p>Nouveau</p>
-                                        </div>
-
                                         <div>
                                             <h3>La note enchantée</h3>
                                             <p>Charonne</p>
                                         </div>
 
-                                        <div>
-                                            <i class="far fa-heart"></i>
-                                        </div>
+                                        <i class="fas fa-heart heart"></i>
                                     </figcaption>
                                 </figure>
                             </article>
@@ -98,7 +99,7 @@
                         <a href="menu/a-la-francaise/index.html">
 
                             <article>
-                                <figure>
+                                <figure class="restaurant__tile">
                                     <img src="assets/images/restaurants/a_la_francaise.jpg" alt="À la française">
 
                                     <figcaption>
@@ -107,9 +108,7 @@
                                             <p>Cité Rouge</p>
                                         </div>
 
-                                        <div>
-                                            <i class="far fa-heart"></i>
-                                        </div>
+                                        <i class="fas fa-heart heart"></i>
                                     </figcaption>
                                 </figure>
                             </article>
@@ -120,7 +119,7 @@
                         <a href="menu/le-delice-des-sens/index.html">
                             
                             <article>
-                                <figure>
+                                <figure class="restaurant__tile">
                                     <img src="assets/images/restaurants/delice_des_sens.jpg" alt="Le délice des sens">
 
                                     <figcaption>
@@ -129,9 +128,7 @@
                                             <p>Folie-Méricourt</p>
                                         </div>
 
-                                        <div>
-                                            <i class="far fa-heart"></i>
-                                        </div>
+                                        <i class="fas fa-heart heart"></i>
                                     </figcaption>
                                 </figure>
                             </article>
@@ -141,22 +138,22 @@
             </nav>
         </main>
 
-        <footer>
+        <footer class="footer">
             <nav>
-                <a href="index.html">
-                    <img src="assets/images/logo/ohmyfood.svg" alt="Ohmyfood!"/>
+                <a href="index.html" class="footer__logo">
+                    <span class="ohmyfood ohmyfood--small">ohmyfood</span>
                 </a>
     
-                <ul>
+                <ul class="footer__links">
                     <li>
                         <a href="#">
-                            <i class="fas fa-utensils"></i>Proposer un restaurant
+                            <i class="fas fa-utensils icon"></i>Proposer un restaurant
                         </a>
                     </li>
     
                     <li>
                         <a href="#">
-                            <i class="fas fa-hands-helping"></i>Devenir partenaire
+                            <i class="fas fa-hands-helping icon"></i>Devenir partenaire
                         </a>
                     </li>
     

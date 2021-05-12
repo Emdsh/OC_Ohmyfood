@@ -1,0 +1,10 @@
+@use '../layout' as *;
+
+.restaurant {
+    background-color: color(accent, light);
+    @include area-padding;
+
+    h2 {
+        padding-bottom: 1rem;
+    }
+}
