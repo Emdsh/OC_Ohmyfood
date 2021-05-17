@@ -28,11 +28,11 @@ h1, h2 {
 }
 
 .restaurant__tile {
-  width: calc(100vw - 2rem);
+  width: calc(100vw - 3rem);
   background-color: white;
   box-shadow: 0 5px 5px 0 #dbdbdb;
   border-radius: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 .restaurant__tile:hover {
   box-shadow: 0 5px 5px 0 #cecece;
@@ -42,25 +42,26 @@ h1, h2 {
   height: 174px;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-fit: center bottom;
-     object-fit: center bottom;
+  -o-object-position: center;
+     object-position: center;
   border-radius: 1rem 1rem 0 0;
 }
 .restaurant__tile figcaption {
   padding: 1rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 .restaurant__tile figcaption .heart {
   font-size: 1.5rem;
   -webkit-text-stroke: 1px black;
   -webkit-text-fill-color: transparent;
+  padding-right: 0.5rem;
 }
 .restaurant__tile figcaption .heart:hover {
   background: -webkit-linear-gradient(bottom left, #ff79da, #9356dc);
-  background-clip: text;
   -webkit-background-clip: text;
+          background-clip: text;
   -webkit-text-stroke: transparent;
 }
 .restaurant__tile--new {
@@ -70,7 +71,7 @@ h1, h2 {
   margin: 0.5rem;
   border-radius: 0.25rem;
   position: absolute;
-  right: 1rem;
+  right: 1.5rem;
 }
 
 .header {
@@ -122,7 +123,7 @@ h1, h2 {
 
 .footer {
   background-color: #353535;
-  padding: 2.5rem 1rem;
+  padding: 2.5rem 1.5rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
@@ -139,15 +140,16 @@ h1, h2 {
   text-decoration: underline;
 }
 .footer .icon {
-  width: 1rem;
-  margin-right: 1rem;
+  font-size: 0.75rem;
+  width: 0.75rem;
+  margin-right: 0.75rem;
 }
 .footer .ohmyfood--small {
   font-size: 1.25rem;
 }
 
 .how-to {
-  padding: 2.5rem 1rem;
+  padding: 2.5rem 1.5rem;
 }
 .how-to h2 {
   padding-bottom: 1rem;
@@ -157,10 +159,10 @@ h1, h2 {
 }
 .how-to__list li {
   counter-increment: i;
-  padding: 2rem 0;
-  margin: 1rem 0;
+  padding: 1.5rem 0;
+  margin: 1.5rem 0;
   background-color: #f4f4f4;
-  border-radius: 1rem;
+  border-radius: 1.5rem;
   box-shadow: 0 5px 5px 0 #dbdbdb;
 }
 .how-to__list li:hover {
@@ -191,7 +193,7 @@ h1, h2 {
 
 .restaurant {
   background-color: #f4f4f4;
-  padding: 2.5rem 1rem;
+  padding: 2.5rem 1.5rem;
 }
 .restaurant h2 {
   padding-bottom: 1rem;

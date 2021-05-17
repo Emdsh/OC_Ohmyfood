@@ -12,10 +12,10 @@
     
         li {
             counter-increment: i;
-            padding: 2rem 0;
-            margin: 1rem 0;
+            padding: 1.5rem 0;
+            margin: 1.5rem 0;
             background-color: color(accent, light);
-            border-radius: 1rem;
+            border-radius: 1.5rem;
             @include shadow;
 
             &:hover {
