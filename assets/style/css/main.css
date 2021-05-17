@@ -64,7 +64,12 @@ h1, h2 {
           background-clip: text;
   -webkit-text-stroke: transparent;
 }
+.restaurant__tile figcaption p {
+  font-weight: 100;
+  margin-top: 0.25rem;
+}
 .restaurant__tile--new {
+  font-weight: 500;
   color: #278870;
   background-color: #99e2d0;
   padding: 0.5rem 0.75rem;
@@ -101,6 +106,8 @@ h1, h2 {
   padding: 0 2rem 1rem 2rem;
 }
 .header__company-presentation p {
+  font-weight: 100;
+  font-size: 1.15rem;
   padding-bottom: 1rem;
 }
 .header__explore-link-button {
@@ -158,6 +165,7 @@ h1, h2 {
   padding-left: 1rem;
 }
 .how-to__list li {
+  font-weight: 500;
   counter-increment: i;
   padding: 1.5rem 0;
   margin: 1.5rem 0;

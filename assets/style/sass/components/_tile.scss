@@ -33,9 +33,15 @@
                 -webkit-text-stroke: transparent;
             }
         }
+
+        p {
+            font-weight: 100;
+            margin-top: .25rem;
+        }
     }
 
     &--new{
+        font-weight: 500;
         color: color(tertiary, dark);
         background-color: color(tertiary);
         padding: .5rem .75rem;
