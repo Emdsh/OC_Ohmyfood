@@ -1,0 +1,44 @@
+@use '../layout' as *;
+
+.header {
+    text-align: center;
+
+    &__website-name {
+        padding: 1rem 0 0.5rem 0;
+        box-shadow: 0 10px 10px -10px lighten(color(accent), 50);
+        position: relative;
+    }
+    
+    &__map-area {
+        background-color: lighten(color(accent), 70);
+        padding: 1rem 0;
+
+        a {
+            color: color(accent);
+            font-weight: bold;
+        }
+
+        &--marker {
+            margin-right: 1rem;
+        }
+    }
+
+    &__company-presentation {
+        padding: 2rem;
+        background-color: color(accent, light);
+
+        h1 {
+            padding: 0 2rem 1rem 2rem;
+        }
+
+        p {
+            font-weight: 100;
+            font-size: 1.15rem;
+            padding-bottom: 1rem;
+        }
+    }
+
+    &__explore-link-button {
+        @include main-button;
+    }
+}

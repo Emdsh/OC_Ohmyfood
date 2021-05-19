@@ -1,0 +1,34 @@
+@use '../layout' as *;
+
+.footer {
+    background-color: color(accent);
+    @include area-padding;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    &__links {
+        margin-top: 1rem;
+
+        li {
+            margin-bottom: .5rem;
+        }
+    }
+
+    a {
+        color: white;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .icon {
+        font-size: .75rem;
+        width: .75rem;
+        margin-right: .75rem;
+    }
+
+    .ohmyfood--small {
+        font-size: 1.25rem;
+    }
+}

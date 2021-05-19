@@ -1,0 +1,17 @@
+@use '../components' as *;
+
+@mixin main-button {
+    background-image: linear-gradient(to bottom right, color(secondary), color(primary));
+    padding: 1rem 1.5rem;
+    margin: 1rem;
+    color: white;
+    border-radius: 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    @include shadow;
+    cursor: pointer;
+
+    &:hover {
+        background-image: linear-gradient(to bottom right, lighten(color(secondary), 2.5), lighten(color(primary), 2.5));
+    }
+}
