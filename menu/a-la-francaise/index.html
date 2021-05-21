@@ -49,89 +49,145 @@
             </nav>
         </header>
 
-        <section>
+        <section class="presentation-image">
             <img src="../../assets/images/restaurants/a_la_francaise.jpg"/>
         </section>
 
-        <main>
-            <h1>À la française<i class="far fa-heart"></i></h1>
+        <main class="carte">
+            <h1>À la française<i class="fas fa-heart heart"></i></h1>
+
             <form>
                 <fieldset>
-                    <legend>Entrées</legend>
+                    <legend class="carte__section-title">Entrées</legend>
 
-                    <input type="checkbox" id="entree-1">
-                    <label for="entree-1">
-                        <strong>Tartare de poulpe acidulé</strong>
-                        <span>Aux zests d'orange</span>
-                        <strong>25€</strong>
-                    </label>
+                    <div class="carte__menu-item--flex">
+                        <input type="checkbox" id="entree-1" class="carte__menu-item--checkbox"/>
 
-                    <input type="checkbox" id="entree-2">
-                    <label for="entree-2">
-                        <strong>Velouté de légumes d'antan</strong>
-                        <span>Carotte, panais, topinambour</span>
-                        <strong>35€</strong>
-                    </label>
+                        <label for="entree-1" class="carte__menu-item">
+                            <div class="carte__menu-item--text">
+                                <strong>Tartare de poulpe acidulé</strong>
+                                <span class="carte__menu-item--description">Aux zests d'orange</span>
+                            </div>
+                        
+                            <strong class="carte__menu-item--price">25€</strong>
+                        </label>
+                    </div>
+                    
+                    <div class="carte__menu-item--flex">
+                        <input type="checkbox" id="entree-2" class="carte__menu-item--checkbox"/>
 
-                    <input type="checkbox" id="entree-3">
-                    <label for="entree-3">
-                        <strong>Soupe à l'oignon</strong>
-                        <span>Revisitée</span>
-                        <strong>20€</strong>
-                    </label>
+                        <label for="entree-2" class="carte__menu-item">
+                            <div class="carte__menu-item--text">
+                                <strong>Velouté de légumes d'antan</strong>
+                                <span class="carte__menu-item--description">Carotte, panais, topinambour</span>
+                            </div>
+                        
+                            <strong class="carte__menu-item--price">35€</strong>
+                        </label>
+                    </div>
+                    
+                    <div class="carte__menu-item--flex">
+                        <input type="checkbox" id="entree-3" class="carte__menu-item--checkbox"/>
+
+                        <label for="entree-3" class="carte__menu-item">
+                            <div class="carte__menu-item--text">
+                                <strong>Soupe à l'oignon</strong>
+                                <span class="carte__menu-item--description">Revisitée</span>
+                            </div>
+                        
+                            <strong class="carte__menu-item--price">20€</strong>
+                        </label>
+                    </div>
                 </fieldset>
 
                 <fieldset>
-                    <legend>Plats</legend>
+                    <legend class="carte__section-title">Plats</legend>
 
-                    <input type="checkbox" id="main-1">
-                    <label for="main-1">
-                        <strong>Coquilles Saint-Jacques</strong>
-                        <span>Accompagnées d'une purée de panais</span>
-                        <strong>40€</strong>
-                    </label>
+                    <div class="carte__menu-item--flex">
+                        <input type="checkbox" id="main-1" class="carte__menu-item--checkbox"/>
 
-                    <input type="checkbox" id="main-2">
-                    <label for="main-2">
-                        <strong>Magret de canard</strong>
-                        <span>Et parmentier de pommes de terre</span>
-                        <strong>35€</strong>
-                    </label>
+                        <label for="main-1" class="carte__menu-item">
+                            <div class="carte__menu-item--text">
+                                <strong>Coquilles Saint-Jacques</strong>
+                                <span class="carte__menu-item--description">Accompagnées d'une purée de panais</span>
+                            </div>
+                        
+                            <strong class="carte__menu-item--price">40€</strong>
+                        </label>
+                    </div>
+                    
+                    <div class="carte__menu-item--flex">
+                        <input type="checkbox" id="main-2" class="carte__menu-item--checkbox"/>
 
-                    <input type="checkbox" id="main-3">
-                    <label for="main-3">
-                        <strong>Pigeonneau d’Ille-et-Vilaine</strong>
-                        <span>Sur son lit de gnocchis aux légumes</span>
-                        <strong>44€</strong>
-                    </label>
+                        <label for="main-2" class="carte__menu-item">
+                            <div class="carte__menu-item--text">
+                                <strong>Magret de canard</strong>
+                                <span class="carte__menu-item--description">Et parmentier de pommes de terre</span>
+                            </div>
+                        
+                            <strong class="carte__menu-item--price">35€</strong>
+                        </label>
+                    </div>
+                    
+                    <div class="carte__menu-item--flex">
+                        <input type="checkbox" id="main-3" class="carte__menu-item--checkbox"/>
+
+                        <label for="main-3" class="carte__menu-item">
+                            <div class="carte__menu-item--text">
+                                <strong>Pigeonneau d’Ille-et-Vilaine</strong>
+                                <span class="carte__menu-item--description">Sur son lit de gnocchis aux légumes</span>
+                            </div>
+                        
+                            <strong class="carte__menu-item--price">44€</strong>
+                        </label>
+                    </div>
                 </fieldset>
 
                 <fieldset>
-                    <legend>Desserts</legend>
+                    <legend class="carte__section-title">Desserts</legend>
 
-                    <input type="checkbox" id="dessert-1">
-                    <label for="dessert-1">
-                        <strong>Pétales de violettes glacés</strong>
-                        <span>Et purée de noisettes</span>
-                        <strong>18€</strong>
-                    </label>
+                    <div class="carte__menu-item--flex">
+                        <input type="checkbox" id="dessert-1" class="carte__menu-item--checkbox"/>
 
-                    <input type="checkbox" id="dessert-2">
-                    <label for="dessert-2">
-                        <strong>Fondant au chocolat</strong>
-                        <span>Revisité</span>
-                        <strong>22€</strong>
-                    </label>
+                        <label for="dessert-1" class="carte__menu-item">
+                            <div class="carte__menu-item--text">
+                                <strong>Pétales de violettes glacés</strong>
+                                <span class="carte__menu-item--description">Et purée de noisettes</span>
+                            </div>
+                        
+                            <strong class="carte__menu-item--price">18€</strong>
+                        </label>
+                    </div>
+                    
 
-                    <input type="checkbox" id="dessert-3">
-                    <label for="dessert-3">
-                        <strong>Millefeuille croustillant</strong>
-                        <span>Myrtilles et pâte d’amande</span>
-                        <strong>23€</strong>
-                    </label>
+                    <div class="carte__menu-item--flex">
+                        <input type="checkbox" id="dessert-2" class="carte__menu-item--checkbox"/>
+
+                        <label for="dessert-2" class="carte__menu-item">
+                            <div class="carte__menu-item--text">
+                                <strong>Fondant au chocolat</strong>
+                                <span class="carte__menu-item--description">Revisité</span>
+                            </div>
+                        
+                            <strong class="carte__menu-item--price">22€</strong>
+                        </label>
+                    </div>
+                    
+                    <div class="carte__menu-item--flex">
+                        <input type="checkbox" id="dessert-3" class="carte__menu-item--checkbox"/>
+                        
+                        <label for="dessert-3" class="carte__menu-item">
+                            <div class="carte__menu-item--text">
+                                <strong>Millefeuille croustillant</strong>
+                                <span class="carte__menu-item--description">Myrtilles et pâte d’amande</span>
+                            </div>
+                        
+                            <strong class="carte__menu-item--price">23€</strong>
+                        </label>
+                    </div>
                 </fieldset>
 
-                <button type="submit">Commander</button>
+                <button type="submit" class="carte__order-button">Commander</button>
             </form>
         </main>
 

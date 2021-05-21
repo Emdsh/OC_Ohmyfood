@@ -49,89 +49,144 @@
             </nav>
         </header>
 
-        <section>
+        <section class="presentation-image">
             <img src="../../assets/images/restaurants/delice_des_sens.jpg"/>
         </section>
 
-        <main>
-            <h1>Le délice des sens<i class="far fa-heart"></i></h1>
+        <main class="carte">
+            <h1>Le délice des sens<i class="fas fa-heart heart"></i></h1>
+
             <form>
                 <fieldset>
-                    <legend>Entrées</legend>
+                    <legend class="carte__section-title">Entrées</legend>
 
-                    <input type="checkbox" id="entree-1">
-                    <label for="entree-1">
-                        <strong>Tartare de thon</strong>
-                        <span>Assaisonné au yuzu</span>
-                        <strong>25€</strong>
-                    </label>
+                    <div class="carte__menu-item--flex">
+                        <input type="checkbox" id="entree-1" class="carte__menu-item--checkbox"/>
 
-                    <input type="checkbox" id="entree-2">
-                    <label for="entree-2">
-                        <strong>Bouchée de homard croustillant</strong>
-                        <span>Et sa farandole de petits légumes</span>
-                        <strong>35€</strong>
-                    </label>
+                        <label for="entree-1" class="carte__menu-item">
+                            <div class="carte__menu-item--text">
+                                <strong>Tartare de thon</strong>
+                                <span class="carte__menu-item--description">Assaisonné au yuzu</span>
+                            </div>
+                        
+                            <strong class="carte__menu-item--price">25€</strong>
+                        </label>
+                    </div>
+                    
+                    <div class="carte__menu-item--flex">
+                        <input type="checkbox" id="entree-2" class="carte__menu-item--checkbox"/>
 
-                    <input type="checkbox" id="entree-3">
-                    <label for="entree-3">
-                        <strong>Velouté de cèpes</strong>
-                        <span>Aux truffes</span>
-                        <strong>20€</strong>
-                    </label>
+                        <label for="entree-2" class="carte__menu-item">
+                            <div class="carte__menu-item--text">
+                                <strong>Bouchée de homard croustillant</strong>
+                                <span class="carte__menu-item--description">Et sa farandole de petits légumes</span>
+                            </div>
+                        
+                            <strong class="carte__menu-item--price">35€</strong>
+                        </label>
+                    </div>
+                    
+                    <div class="carte__menu-item--flex">
+                        <input type="checkbox" id="entree-3" class="carte__menu-item--checkbox"/>
+
+                        <label for="entree-3" class="carte__menu-item">
+                            <div class="carte__menu-item--text">
+                                <strong>Velouté de cèpes</strong>
+                                <span class="carte__menu-item--description">Aux truffes</span>
+                            </div>
+                        
+                            <strong class="carte__menu-item--price">20€</strong>
+                        </label>
+                    </div>
                 </fieldset>
 
                 <fieldset>
-                    <legend>Plats</legend>
+                    <legend class="carte__section-title">Plats</legend>
 
-                    <input type="checkbox" id="main-1">
-                    <label for="main-1">
-                        <strong>Poulet rôti aux herbes de Provence</strong>
-                        <span>Et sa crème de truffe</span>
-                        <strong>40€</strong>
-                    </label>
+                    <div class="carte__menu-item--flex">
+                        <input type="checkbox" id="main-1" class="carte__menu-item--checkbox"/>
 
-                    <input type="checkbox" id="main-2">
-                    <label for="main-2">
-                        <strong>Langouste rôtie</strong>
-                        <span>Et ses légumes de saison</span>
-                        <strong>35€</strong>
-                    </label>
+                        <label for="main-1" class="carte__menu-item">
+                            <div class="carte__menu-item--text">
+                                <strong>Poulet rôti aux herbes de Provence</strong>
+                                <span class="carte__menu-item--description">Et sa crème de truffe</span>
+                            </div>
+                        
+                            <strong class="carte__menu-item--price">40€</strong>
+                        </label>
+                    </div>
+                    
+                    <div class="carte__menu-item--flex">
+                        <input type="checkbox" id="main-2" class="carte__menu-item--checkbox"/>
 
-                    <input type="checkbox" id="main-3">
-                    <label for="main-3">
-                        <strong>Côte de boeuf Angus</strong>
-                        <span>Et sa purée de panais</span>
-                        <strong>44€</strong>
-                    </label>
+                        <label for="main-2" class="carte__menu-item">
+                            <div class="carte__menu-item--text">
+                                <strong>Langouste rôtie</strong>
+                                <span class="carte__menu-item--description">Et ses légumes de saison</span>
+                            </div>
+                        
+                            <strong class="carte__menu-item--price">35€</strong>
+                        </label>
+                    </div>
+                    
+                    <div class="carte__menu-item--flex">
+                        <input type="checkbox" id="main-3" class="carte__menu-item--checkbox"/>
+
+                        <label for="main-3" class="carte__menu-item">
+                            <div class="carte__menu-item--text">
+                                <strong>Côte de boeuf Angus</strong>
+                                <span class="carte__menu-item--description">Et sa purée de panais</span>
+                            </div>
+                        
+                            <strong class="carte__menu-item--price">44€</strong>
+                        </label>
+                    </div>
                 </fieldset>
 
                 <fieldset>
-                    <legend>Desserts</legend>
+                    <legend class="carte__section-title">Desserts</legend>
 
-                    <input type="checkbox" id="dessert-1">
-                    <label for="dessert-1">
-                        <strong>Farandole de desserts</strong>
-                        <span>Du chef</span>
-                        <strong>18€</strong>
-                    </label>
+                    <div class="carte__menu-item--flex">
+                        <input type="checkbox" id="dessert-1" class="carte__menu-item--checkbox"/>
 
-                    <input type="checkbox" id="dessert-2">
-                    <label for="dessert-2">
-                        <strong>Crème brulée</strong>
-                        <span>Revisitée</span>
-                        <strong>22€</strong>
-                    </label>
+                        <label for="dessert-1" class="carte__menu-item">
+                            <div class="carte__menu-item--text">
+                                <strong>Farandole de desserts</strong>
+                                <span class="carte__menu-item--description">Du chef</span>
+                            </div>
+                        
+                            <strong class="carte__menu-item--price">18€</strong>
+                        </label>
+                    </div>
+                    
+                    <div class="carte__menu-item--flex">
+                        <input type="checkbox" id="dessert-2" class="carte__menu-item--checkbox"/>
 
-                    <input type="checkbox" id="dessert-3">
-                    <label for="dessert-3">
-                        <strong>Tiramisu</strong>
-                        <span>À la noisette</span>
-                        <strong>23€</strong>
-                    </label>
+                        <label for="dessert-2" class="carte__menu-item">
+                            <div class="carte__menu-item--text">
+                                <strong>Crème brulée</strong>
+                                <span class="carte__menu-item--description">Revisitée</span>
+                            </div>
+                        
+                            <strong class="carte__menu-item--price">22€</strong>
+                        </label>
+                    </div>
+                    
+                    <div class="carte__menu-item--flex">
+                        <input type="checkbox" id="dessert-3" class="carte__menu-item--checkbox"/>
+
+                        <label for="dessert-3" class="carte__menu-item">
+                            <div class="carte__menu-item--text">
+                                <strong>Tiramisu</strong>
+                                <span class="carte__menu-item--description">À la noisette</span>
+                            </div>
+                        
+                            <strong class="carte__menu-item--price">23€</strong>
+                        </label>
+                    </div>
                 </fieldset>
 
-                <button type="submit">Commander</button>
+                <button type="submit" class="carte__order-button">Commander</button>
             </form>
         </main>
 

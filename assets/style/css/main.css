@@ -206,3 +206,119 @@ h1, h2 {
 .restaurant h2 {
   padding-bottom: 1rem;
 }
+
+.presentation-image img {
+  width: 100vw;
+  height: 260px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.carte {
+  position: relative;
+  top: -2.5rem;
+  background-color: #f4f4f4;
+  border-radius: 2.5rem 2.5rem 0 0;
+  padding: 2.5rem 1.5rem;
+}
+.carte::after {
+  content: "";
+  background-color: #f4f4f4;
+  width: 100vw;
+  height: 2.5rem;
+  position: absolute;
+  bottom: -2.5rem;
+  left: 0;
+}
+.carte h1 {
+  font-family: "Shrikhand", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.carte h1 .heart {
+  font-size: 1.5rem;
+  -webkit-text-stroke: 1px black;
+  -webkit-text-fill-color: transparent;
+  padding-right: 0.5rem;
+}
+.carte h1 .heart:hover {
+  background: -webkit-linear-gradient(bottom left, #ff79da, #9356dc);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-stroke: transparent;
+}
+.carte__section-title {
+  text-transform: uppercase;
+  font-weight: 100;
+  margin: 1rem 0;
+  position: relative;
+}
+.carte__section-title::after {
+  content: "";
+  background-color: #99e2d0;
+  width: 42px;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+}
+.carte__menu-item {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  box-shadow: 0 5px 5px 0 #dbdbdb;
+}
+.carte__menu-item:hover {
+  box-shadow: 0 5px 5px 0 #cecece;
+}
+.carte__menu-item--text {
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.carte__menu-item--description {
+  font-weight: 100;
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
+}
+.carte__menu-item--price {
+  align-self: flex-end;
+  font-size: 0.8rem;
+}
+.carte__menu-item--checkbox {
+  display: none;
+}
+.carte__menu-item--checkbox:hover, .carte__menu-item--checkbox:checked {
+  display: unset;
+  margin: 1rem;
+}
+.carte__menu-item--flex {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.carte__order-button {
+  background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
+  padding: 1rem 1.5rem;
+  margin: 1rem;
+  color: white;
+  border-radius: 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  box-shadow: 0 5px 5px 0 #dbdbdb;
+  cursor: pointer;
+}
+.carte__order-button:hover {
+  box-shadow: 0 5px 5px 0 #cecece;
+}
+.carte__order-button:hover {
+  background-image: linear-gradient(to bottom right, #ff86de, #9a61de);
+}
