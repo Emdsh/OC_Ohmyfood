@@ -128,6 +128,14 @@ h1, h2 {
   background-image: linear-gradient(to bottom right, #ff86de, #9a61de);
 }
 
+.go-back-button {
+  position: absolute;
+  left: 0;
+  padding: 0.75rem 1.5rem;
+  color: #353535;
+  font-size: 1.25rem;
+}
+
 .footer {
   background-color: #353535;
   padding: 2.5rem 1.5rem;
