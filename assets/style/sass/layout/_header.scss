@@ -37,6 +37,7 @@
     }
 
     &__explore-link-button {
+        display: inline-block;
         @include main-button;
     }
 }
