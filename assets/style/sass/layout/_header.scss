@@ -2,6 +2,9 @@
 
 .header {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     &__website-name {
         padding: 1rem 0 0.5rem 0;
@@ -40,6 +43,7 @@
 
     &__explore-link-button {
         @include main-button;
+        margin: 1rem;
     }
 }
 

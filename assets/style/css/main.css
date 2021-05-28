@@ -81,6 +81,9 @@ h1, h2 {
 
 .header {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .header__website-name {
   padding: 1rem 0 0.5rem 0;
@@ -113,13 +116,14 @@ h1, h2 {
 .header__explore-link-button {
   background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
   padding: 1rem 1.5rem;
-  margin: 1rem;
+  min-width: 225px;
   color: white;
   border-radius: 1.5rem;
   font-size: 1rem;
   font-weight: bold;
   box-shadow: 0 5px 5px 0 #dbdbdb;
   cursor: pointer;
+  margin: 1rem;
 }
 .header__explore-link-button:hover {
   box-shadow: 0 5px 5px 0 #cecece;
@@ -316,17 +320,22 @@ h1, h2 {
 .carte__order-button {
   background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
   padding: 1rem 1.5rem;
-  margin: 1rem;
+  min-width: 225px;
   color: white;
   border-radius: 1.5rem;
   font-size: 1rem;
   font-weight: bold;
   box-shadow: 0 5px 5px 0 #dbdbdb;
   cursor: pointer;
+  margin-top: 2.5rem;
 }
 .carte__order-button:hover {
   box-shadow: 0 5px 5px 0 #cecece;
 }
 .carte__order-button:hover {
   background-image: linear-gradient(to bottom right, #ff86de, #9a61de);
+}
+.carte__order-button-container {
+  display: flex;
+  justify-content: center;
 }

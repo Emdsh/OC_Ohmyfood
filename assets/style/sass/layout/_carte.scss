@@ -100,5 +100,11 @@
 
     &__order-button {
         @include main-button;
+        margin-top: 2.5rem;
+
+        &-container {
+            display: flex;
+            justify-content: center;
+        }
     }
 }

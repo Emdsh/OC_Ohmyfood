@@ -3,7 +3,7 @@
 @mixin main-button {
     background-image: linear-gradient(to bottom right, color(secondary), color(primary));
     padding: 1rem 1.5rem;
-    margin: 1rem;
+    min-width: 225px;
     color: white;
     border-radius: 1.5rem;
     font-size: 1rem;
