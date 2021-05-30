@@ -280,22 +280,20 @@ h1, h2 {
 .carte__menu-item {
   background-color: white;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   padding: 1rem;
   border-radius: 1rem;
-  width: 100%;
+  width: calc(100vw - 3rem);
   margin-bottom: 1rem;
   box-shadow: 0 5px 5px 0 #dbdbdb;
+  /*&--text {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+  }*/
 }
 .carte__menu-item:hover {
   box-shadow: 0 5px 5px 0 #cecece;
-}
-.carte__menu-item--text {
-  display: flex;
-  flex-direction: column;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 .carte__menu-item--description {
   font-weight: 100;
@@ -304,14 +302,16 @@ h1, h2 {
 }
 .carte__menu-item--price {
   align-self: flex-end;
+  /*position: relative;
+  top: -.8rem;*/
   font-size: 0.8rem;
 }
 .carte__menu-item--checkbox {
   display: none;
-}
-.carte__menu-item--checkbox:hover, .carte__menu-item--checkbox:checked {
-  display: unset;
-  margin: 1rem;
+  /*&:hover, &:checked {
+      display: unset;
+      margin: 1rem;
+  }*/
 }
 .carte__menu-item--flex {
   display: flex;

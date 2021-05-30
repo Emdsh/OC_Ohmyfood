@@ -57,20 +57,18 @@
     &__menu-item {
         background-color: white;
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
         padding: 1rem;
         border-radius: 1rem;
-        width: 100%;
+        width: calc(100vw - 3rem);
         margin-bottom: 1rem;
         @include shadow;
 
-        &--text {
-            display: flex;
-            flex-direction: column;
+        /*&--text {
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-        }
+        }*/ //! deleted
 
         &--description {
             font-weight: 100;
@@ -80,16 +78,18 @@
 
         &--price {
             align-self: flex-end;
+            /*position: relative;
+            top: -.8rem;*/
             font-size: .8rem;
         }
 
         &--checkbox {
             display: none;
 
-            &:hover, &:checked {
+            /*&:hover, &:checked {
                 display: unset;
                 margin: 1rem;
-            }
+            }*/
         }
 
         &--flex {
