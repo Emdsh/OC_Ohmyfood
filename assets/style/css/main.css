@@ -291,6 +291,10 @@ h1, h2 {
       overflow: hidden;
       text-overflow: ellipsis;
   }*/
+  /*&--flex {
+      display: flex;
+      flex-direction: row-reverse;
+  }*/
 }
 .carte__menu-item:hover {
   box-shadow: 0 5px 5px 0 #cecece;
@@ -312,10 +316,6 @@ h1, h2 {
       display: unset;
       margin: 1rem;
   }*/
-}
-.carte__menu-item--flex {
-  display: flex;
-  flex-direction: row-reverse;
 }
 .carte__order-button {
   background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
