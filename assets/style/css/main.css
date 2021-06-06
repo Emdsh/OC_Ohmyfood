@@ -287,17 +287,13 @@ h1, h2 {
   flex-direction: column;
   padding: 1rem;
   border-radius: 1rem;
-  width: calc(100vw - 2rem);
+  width: 100%;
   margin-bottom: 1rem;
   box-shadow: 0 5px 5px 0 #dbdbdb;
   /*&--text {
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-  }*/
-  /*&--flex {
-      display: flex;
-      flex-direction: row-reverse;
   }*/
 }
 .carte__menu-item:hover {
@@ -307,12 +303,11 @@ h1, h2 {
   font-weight: 100;
   font-size: 0.8rem;
   margin-top: 0.2rem;
+  display: flex;
+  justify-content: space-between;
 }
 .carte__menu-item--price {
-  align-self: flex-end;
-  /*position: relative;
-  top: -.8rem;*/
-  font-size: 0.8rem;
+  font-weight: 700;
 }
 .carte__menu-item--checkbox {
   display: none;
