@@ -28,19 +28,23 @@
 
     h1 {
         font-family: 'Shrikhand', sans-serif;
+        font-size: 1.75rem;
         display: flex;
         justify-content: space-between;
-        margin-bottom: 1rem;
+        align-items: center;
+        position: relative;
+        top: -.5rem;
 
         .heart {
             @include heart;
+            margin-right: 0.5rem;
         }
     }
 
     &__section-title {
         text-transform: uppercase;
         font-weight: 100;
-        margin: 1rem 0;
+        margin: 1.5rem 0 1.25rem 0;
         position: relative;
 
         &::after {
@@ -60,7 +64,7 @@
         flex-direction: column;
         padding: 1rem;
         border-radius: 1rem;
-        width: calc(100vw - 3rem);
+        width: calc(100vw - 2rem);
         margin-bottom: 1rem;
         @include shadow;
 

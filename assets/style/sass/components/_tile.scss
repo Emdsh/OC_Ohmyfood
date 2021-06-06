@@ -2,7 +2,7 @@
 @use 'self' as *;
 
 .restaurant__tile {
-    width: calc(100vw - 3rem);
+    width: calc(100vw - 2rem);
     background-color: white;
     @include shadow;
     border-radius: 1rem;
@@ -40,6 +40,6 @@
         margin: 0.5rem;
         border-radius: 0.25rem;
         position: absolute;
-        right: 1.5rem;
+        right: 1rem;
     }
 }
