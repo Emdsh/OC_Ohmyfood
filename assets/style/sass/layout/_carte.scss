@@ -26,6 +26,10 @@
         left: 0;
     }
 
+    fieldset {
+        margin-top: 1.5rem;
+    }
+
     h1 {
         font-family: 'Shrikhand', sans-serif;
         font-size: 1.75rem;
@@ -44,7 +48,7 @@
     &__section-title {
         text-transform: uppercase;
         font-weight: 100;
-        margin: 1.5rem 0 1.25rem 0;
+        margin-bottom: 1.25rem;
         position: relative;
 
         &::after {
@@ -99,7 +103,7 @@
         &--price {
             font-weight: 700;
 
-            &::after {
+            /*&::after {
                 font-family: "Font Awesome 5 Free"; font-weight: 700; content: "\f058";
                 font-size: 1.5rem;
                 color: white;
@@ -111,7 +115,7 @@
     
             &:hover::after {
                 display: unset;
-            }
+            }*/
         }
 
         &--checkbox {
@@ -123,7 +127,7 @@
             }*/
         }
 
-        /*&::after {
+        &::after {
             font-family: "Font Awesome 5 Free"; font-weight: 700; content: "\f058";
             font-size: 1.5rem;
             color: white;
@@ -134,8 +138,8 @@
         }
 
         &:hover::after {
-            display: unset;
-        }*/
+            display: inline-block;
+        }
     }
 
     &__order-button {
