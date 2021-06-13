@@ -12,3 +12,11 @@
         box-shadow: 0 5px 5px 0 lighten(color(accent), 60);
     }
 }
+
+@mixin ellipsis {
+    width: calc(100% - 2.5em);
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis;    
+}

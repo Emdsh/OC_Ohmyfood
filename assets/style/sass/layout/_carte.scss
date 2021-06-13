@@ -62,85 +62,83 @@
         }
     }
 
-    &__menu-item {
-        background-color: white;
-        padding: 1rem;
-        border-radius: 1rem;
-        width: 100%;
-        margin-bottom: 1rem;
-        @include shadow;
+    &__menu {
+        $grandgrandparent: &;
 
-        /*&--text {
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }*/ //! deleted
-
-        label {
-            width: calc(100% - 3.5rem);
-            white-space: nowrap;
-            overflow: hidden;
-            display: inline-block;
-            text-overflow: ellipsis;
-        }
-
-        &--description {
-            font-weight: 100;
-            font-size: .8rem;
-            margin-top: .2rem;
+        &-item{
             display: flex;
-            justify-content: space-between;
 
-            &-text {
-                width: 70%;
-                white-space: nowrap;
-                overflow: hidden;
-                display: inline-block;
-                text-overflow: ellipsis;
+            $grandparent: &;
+
+            &:hover {
+                & #{$grandparent}--checkbox::after {                        
+                        font-family: "Font Awesome 5 Free"; font-weight: 700; content: "\f058";
+                        font-size: 1.45rem;
+                        color: white;
+                        background-color: color(tertiary);
+                        border-radius: 0 1rem 1rem 0;
+                        padding: 1.5rem 1.25rem 1.5rem 1.25rem;
+                        display: inline-block;
+        
+                        box-shadow: 0 5px 5px 0 lighten(color(accent), 60);
+                }
+
+                & #{$grandgrandparent}-text {
+                    border-radius: 1rem 0 0 1rem;
+
+                    box-shadow: 0 5px 5px 0 lighten(color(accent), 60);
+                }
             }
         }
 
-        &--price {
-            font-weight: 700;
-
-            /*&::after {
-                font-family: "Font Awesome 5 Free"; font-weight: 700; content: "\f058";
-                font-size: 1.5rem;
-                color: white;
-                background-color: color(tertiary);
-                padding: 1.2rem;
-                margin-left: 1rem;
-                display: none;
+        &-text {
+            background-color: white;
+            padding: 1rem;
+            border-radius: 1rem;
+            max-width: calc(100vw - 2rem);
+            width: 100%;
+            margin-bottom: 1rem;
+            @include shadow;
+            
+            label {
+                @include ellipsis;
             }
+
+            input {
+                display: none; //none
+
+                /*&:checked {
+                    #{$grandgrandparent}-item--checkbox::after {
+                        font-family: "Font Awesome 5 Free"; font-weight: 700; content: "\f058";
+                        font-size: 1.45rem;
+                        color: white;
+                        background-color: color(tertiary);
+                        border-radius: 0 1rem 1rem 0;
+                        padding: 1.5rem 1.25rem 1.5rem 1.25rem;
+                        display: inline-block;
+        
+                        box-shadow: 0 5px 5px 0 lighten(color(accent), 60);                        
+                    }
+                }*/
+            }
+
+            &--description {
+                font-weight: 100;
+                font-size: .8rem;
+                margin-top: .2rem;
+                display: flex;
+                justify-content: space-between;
     
-            &:hover::after {
-                display: unset;
-            }*/
-        }
+                &-content {
+                    @include ellipsis;
+                }
+            }
 
-        &--checkbox {
-            display: none;
-
-            /*&:hover, &:checked {
-                display: unset;
-                margin: 1rem;
-            }*/
+            &--price {
+                font-weight: 700;
+            }
         }
-
-        &::after {
-            font-family: "Font Awesome 5 Free"; font-weight: 700; content: "\f058";
-            font-size: 1.5rem;
-            color: white;
-            background-color: color(tertiary);
-            padding: 1.2rem;
-            margin-left: 1rem;
-            display: none;
-        }
-
-        &:hover::after {
-            display: inline-block;
-        }
-    }
+    }    
 
     &__order-button {
         @include main-button;

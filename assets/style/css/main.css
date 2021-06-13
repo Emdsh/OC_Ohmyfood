@@ -245,6 +245,9 @@ h1, h2 {
   bottom: -2.5rem;
   left: 0;
 }
+.carte fieldset {
+  margin-top: 1.5rem;
+}
 .carte h1 {
   font-family: "Shrikhand", sans-serif;
   font-size: 1.75rem;
@@ -270,7 +273,7 @@ h1, h2 {
 .carte__section-title {
   text-transform: uppercase;
   font-weight: 100;
-  margin: 1.5rem 0 1.25rem 0;
+  margin-bottom: 1.25rem;
   position: relative;
 }
 .carte__section-title::after {
@@ -283,78 +286,75 @@ h1, h2 {
   bottom: -5px;
 }
 .carte__menu-item {
+  display: flex;
+}
+.carte__menu-item:hover .carte__menu-item--checkbox::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  content: "";
+  font-size: 1.45rem;
+  color: white;
+  background-color: #99e2d0;
+  border-radius: 0 1rem 1rem 0;
+  padding: 1.5rem 1.25rem 1.5rem 1.25rem;
+  display: inline-block;
+  box-shadow: 0 5px 5px 0 #cecece;
+}
+.carte__menu-item:hover .carte__menu-text {
+  border-radius: 1rem 0 0 1rem;
+  box-shadow: 0 5px 5px 0 #cecece;
+}
+.carte__menu-text {
   background-color: white;
   padding: 1rem;
   border-radius: 1rem;
+  max-width: calc(100vw - 2rem);
   width: 100%;
   margin-bottom: 1rem;
   box-shadow: 0 5px 5px 0 #dbdbdb;
-  /*&--text {
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-  }*/
-  /*&::after {
-      font-family: "Font Awesome 5 Free"; font-weight: 700; content: "\f058";
-      font-size: 1.5rem;
-      color: white;
-      background-color: color(tertiary);
-      padding: 1.2rem;
-      margin-left: 1rem;
-      display: none;
-  }
-
-  &:hover::after {
-      display: unset;
-  }*/
 }
-.carte__menu-item:hover {
+.carte__menu-text:hover {
   box-shadow: 0 5px 5px 0 #cecece;
 }
-.carte__menu-item label {
-  width: calc(100% - 3.5rem);
+.carte__menu-text label {
+  width: calc(100% - 2.5em);
   white-space: nowrap;
   overflow: hidden;
   display: inline-block;
   text-overflow: ellipsis;
 }
-.carte__menu-item--description {
+.carte__menu-text input {
+  display: none;
+  /*&:checked {
+      .carte__menu-item--checkbox::after {
+          font-family: "Font Awesome 5 Free"; font-weight: 700; content: "\f058";
+          font-size: 1.45rem;
+          color: white;
+          background-color: color(tertiary);
+          border-radius: 0 1rem 1rem 0;
+          padding: 1.5rem 1.25rem 1.5rem 1.25rem;
+          display: inline-block;
+
+          box-shadow: 0 5px 5px 0 lighten(color(accent), 60);                        
+      }
+  }*/
+}
+.carte__menu-text--description {
   font-weight: 100;
   font-size: 0.8rem;
   margin-top: 0.2rem;
   display: flex;
   justify-content: space-between;
 }
-.carte__menu-item--description-text {
-  width: 70%;
+.carte__menu-text--description-content {
+  width: calc(100% - 2.5em);
   white-space: nowrap;
   overflow: hidden;
   display: inline-block;
   text-overflow: ellipsis;
 }
-.carte__menu-item--price {
+.carte__menu-text--price {
   font-weight: 700;
-}
-.carte__menu-item--price::after {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 700;
-  content: "";
-  font-size: 1.5rem;
-  color: white;
-  background-color: #99e2d0;
-  padding: 1.2rem;
-  margin-left: 1rem;
-  display: none;
-}
-.carte__menu-item--price:hover::after {
-  display: unset;
-}
-.carte__menu-item--checkbox {
-  display: none;
-  /*&:hover, &:checked {
-      display: unset;
-      margin: 1rem;
-  }*/
 }
 .carte__order-button {
   background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
