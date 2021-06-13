@@ -117,7 +117,8 @@ h1, h2 {
 .header__explore-link-button {
   background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
   padding: 1rem 1.5rem;
-  min-width: 225px;
+  width: 100%;
+  max-width: 225px;
   color: white;
   border-radius: 1.5rem;
   font-size: 1rem;
@@ -287,6 +288,12 @@ h1, h2 {
 }
 .carte__menu-item {
   display: flex;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 5px 5px 0 #dbdbdb;
+}
+.carte__menu-item:hover {
+  box-shadow: 0 5px 5px 0 #cecece;
 }
 .carte__menu-item:hover .carte__menu-item--checkbox::after {
   font-family: "Font Awesome 5 Free";
@@ -298,11 +305,9 @@ h1, h2 {
   border-radius: 0 1rem 1rem 0;
   padding: 1.5rem 1.25rem 1.5rem 1.25rem;
   display: inline-block;
-  box-shadow: 0 5px 5px 0 #cecece;
 }
 .carte__menu-item:hover .carte__menu-text {
   border-radius: 1rem 0 0 1rem;
-  box-shadow: 0 5px 5px 0 #cecece;
 }
 .carte__menu-text {
   background-color: white;
@@ -310,11 +315,6 @@ h1, h2 {
   border-radius: 1rem;
   max-width: calc(100vw - 2rem);
   width: 100%;
-  margin-bottom: 1rem;
-  box-shadow: 0 5px 5px 0 #dbdbdb;
-}
-.carte__menu-text:hover {
-  box-shadow: 0 5px 5px 0 #cecece;
 }
 .carte__menu-text label {
   width: calc(100% - 2.5em);
@@ -359,7 +359,8 @@ h1, h2 {
 .carte__order-button {
   background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
   padding: 1rem 1.5rem;
-  min-width: 225px;
+  width: 100%;
+  max-width: 225px;
   color: white;
   border-radius: 1.5rem;
   font-size: 1rem;
