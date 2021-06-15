@@ -22,13 +22,20 @@
         justify-content: space-between;
         align-items: flex-start;
 
-        .heart {
-            @include heart;
-        }
-
         p {
             font-weight: 100;
             margin-top: .25rem;
+        }
+
+        .heart {
+
+            &::after {
+                @include heart;
+            }
+
+            &:hover::after{
+                @include heart-hover;
+            }
         }
     }
 

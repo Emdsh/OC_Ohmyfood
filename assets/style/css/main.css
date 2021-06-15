@@ -53,21 +53,25 @@ h1, h2 {
   justify-content: space-between;
   align-items: flex-start;
 }
-.restaurant__tile figcaption .heart {
+.restaurant__tile figcaption p {
+  font-weight: 100;
+  margin-top: 0.25rem;
+}
+.restaurant__tile figcaption .heart::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  content: "";
   font-size: 1.5rem;
   -webkit-text-stroke: 1px black;
   -webkit-text-fill-color: transparent;
-  padding-right: 0.5rem;
+  padding: 0 0.5rem;
 }
-.restaurant__tile figcaption .heart:hover {
+.restaurant__tile figcaption .heart:hover::after {
   background: -webkit-linear-gradient(bottom left, #ff79da, #9356dc);
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-stroke: transparent;
-}
-.restaurant__tile figcaption p {
-  font-weight: 100;
-  margin-top: 0.25rem;
+  transform: scale(1.025);
 }
 .restaurant__tile--new {
   font-weight: 500;
@@ -246,30 +250,38 @@ h1, h2 {
   bottom: -2.5rem;
   left: 0;
 }
-.carte fieldset {
-  margin-top: 1.5rem;
-}
-.carte h1 {
-  font-family: "Shrikhand", sans-serif;
-  font-size: 1.75rem;
+.carte header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
   top: -0.5rem;
 }
-.carte h1 .heart {
+.carte fieldset {
+  margin-top: 1.5rem;
+}
+.carte h1 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 1.75rem;
+}
+.carte .heart {
+  margin-right: 1rem;
+}
+.carte .heart::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  content: "";
   font-size: 1.5rem;
   -webkit-text-stroke: 1px black;
   -webkit-text-fill-color: transparent;
-  padding-right: 0.5rem;
-  margin-right: 0.5rem;
+  padding: 0 0.5rem;
 }
-.carte h1 .heart:hover {
+.carte .heart:hover::after {
   background: -webkit-linear-gradient(bottom left, #ff79da, #9356dc);
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-stroke: transparent;
+  transform: scale(1.025);
 }
 .carte__section-title {
   text-transform: uppercase;
@@ -296,7 +308,7 @@ h1, h2 {
 .carte__menu-item:hover {
   box-shadow: 0 5px 5px 0 #cecece;
 }
-.carte__menu-item:hover .carte__menu-item--checkbox::after {
+.carte__menu-item:hover .checkbox::after {
   font-family: "Font Awesome 5 Free";
   font-weight: 700;
   content: "";
@@ -327,16 +339,8 @@ h1, h2 {
 .carte__menu-text input {
   display: none;
   /*&:checked {
-      .carte__menu-item--checkbox::after {
-          font-family: "Font Awesome 5 Free";
-          font-weight: 700; content: "\f058";
-          font-size: 1.5rem;
-          color: white;
-          background-color: color(tertiary);
-          border-radius: 0 1rem 1rem 0;
-          padding: calc(1.45rem - .5px) 1.25rem;
-          // padding: 1.44rem 1.25rem;
-          display: inline-block;
+      .checkbox::after {
+          @include checkmark;
       }
   }*/
 }
