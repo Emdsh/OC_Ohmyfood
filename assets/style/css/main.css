@@ -28,6 +28,23 @@ h1, h2 {
   font-size: 1.5rem;
 }
 
+@-webkit-keyframes heart-fill {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes heart-fill {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .restaurant__tile {
   width: calc(100vw - 2rem);
   background-color: white;
@@ -72,6 +89,8 @@ h1, h2 {
           background-clip: text;
   -webkit-text-stroke: transparent;
   transform: scale(1.025);
+  -webkit-animation: heart-fill 0.2s ease-in-out;
+          animation: heart-fill 0.2s ease-in-out;
 }
 .restaurant__tile--new {
   font-weight: 500;
@@ -282,6 +301,8 @@ h1, h2 {
           background-clip: text;
   -webkit-text-stroke: transparent;
   transform: scale(1.025);
+  -webkit-animation: heart-fill 0.2s ease-in-out;
+          animation: heart-fill 0.2s ease-in-out;
 }
 .carte__section-title {
   text-transform: uppercase;

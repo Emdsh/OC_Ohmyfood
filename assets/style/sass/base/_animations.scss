@@ -1,0 +1,13 @@
+@mixin heart-fill-anim {
+    transform: scale(1.025);
+    animation: heart-fill .2s ease-in-out;
+}
+
+@keyframes heart-fill {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
