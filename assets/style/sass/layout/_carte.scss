@@ -69,23 +69,27 @@
             display: flex;
             border-radius: 1rem;
             margin-bottom: 1rem;
+            max-height: 4.5rem;
             @include shadow;
 
             $menubox: &;
 
             &:hover {
                 & #{$menubox}--checkbox::after {                        
-                        font-family: "Font Awesome 5 Free"; font-weight: 700; content: "\f058";
-                        font-size: 1.45rem;
-                        color: white;
-                        background-color: color(tertiary);
-                        border-radius: 0 1rem 1rem 0;
-                        padding: 1.5rem 1.25rem 1.5rem 1.25rem;
-                        display: inline-block;
+                    font-family: "Font Awesome 5 Free";
+                    font-weight: 700; content: "\f058";
+                    font-size: 1.5rem;
+                    color: white;
+                    background-color: color(tertiary);
+                    border-radius: 0 1rem 1rem 0;
+                    padding: calc(1.45rem - .5px) 1.25rem;
+                    // padding: 1.44rem 1.25rem;
+                    display: inline-block;
                 }
 
                 & #{$menu}-text {
                     border-radius: 1rem 0 0 1rem;
+                    width: calc((100vw - 2rem) - 4rem);
                 }
             }
         }
@@ -94,8 +98,7 @@
             background-color: white;
             padding: 1rem;
             border-radius: 1rem;
-            max-width: calc(100vw - 2rem);
-            width: 100%;
+            width: calc(100vw - 2rem);
             
             label {
                 @include ellipsis;
@@ -106,15 +109,15 @@
 
                 /*&:checked {
                     #{$menu}-item--checkbox::after {
-                        font-family: "Font Awesome 5 Free"; font-weight: 700; content: "\f058";
-                        font-size: 1.45rem;
+                        font-family: "Font Awesome 5 Free";
+                        font-weight: 700; content: "\f058";
+                        font-size: 1.5rem;
                         color: white;
                         background-color: color(tertiary);
                         border-radius: 0 1rem 1rem 0;
-                        padding: 1.5rem 1.25rem 1.5rem 1.25rem;
+                        padding: calc(1.45rem - .5px) 1.25rem;
+                        // padding: 1.44rem 1.25rem;
                         display: inline-block;
-        
-                        box-shadow: 0 5px 5px 0 lighten(color(accent), 60);                        
                     }
                 }*/
             }

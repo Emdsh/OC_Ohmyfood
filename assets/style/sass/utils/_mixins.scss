@@ -14,7 +14,7 @@
 }
 
 @mixin ellipsis {
-    width: calc(100% - 2.5em);
+    width: calc(100% - 2rem);
     white-space: nowrap;
     overflow: hidden;
     display: inline-block;
