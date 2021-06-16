@@ -75,39 +75,53 @@
     &__menu {
         $menu: &;
 
-        &-item{
+        &-item {
+            background-color: white;
             display: flex;
             border-radius: 1rem;
             margin-bottom: 1rem;
             max-height: 4.5rem;
+            max-width: calc(100vw - 2rem);
+            overflow: hidden;
             @include shadow;
 
-            $menubox: &;
+            .checkbox {
+                background-color: color(tertiary);
+                transform: translateX(25%);
+                transition: transform .75s ease-in-out .25s;
+
+                &::after {
+                    @include checkmark;
+                    
+                }
+            }
 
             &:hover {
-                .checkbox::after {                        
-                    @include checkmark;
+                .checkbox {
+                    transform: translateX(0);
+
+                    &::after {
+                        animation: checkmark-rotate 1s;
+                    }
                 }
 
                 & #{$menu}-text {
-                    border-radius: 1rem 0 0 1rem;
-                    width: calc((100vw - 2rem) - 4rem);
+                    min-width: calc((100vw - 2rem) - 4rem);
                 }
             }
         }
 
         &-text {
-            background-color: white;
             padding: 1rem;
-            border-radius: 1rem;
-            width: calc(100vw - 2rem);
+            min-width: calc(100vw - 2rem);
+            transition: min-width .75s ease-in-out;
             
             label {
                 @include ellipsis;
             }
 
             input {
-                display: none; //none
+                display: none;
 
                 /*&:checked {
                     .checkbox::after {

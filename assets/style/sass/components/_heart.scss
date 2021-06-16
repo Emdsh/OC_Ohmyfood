@@ -14,5 +14,6 @@
     background: -webkit-linear-gradient(bottom left, color(secondary), color(primary));
     background-clip: text;
     -webkit-text-stroke: transparent;
-    @include heart-fill-anim;
+    transform: scale(1.025);
+    animation: heart-fill .2s ease-in-out;
 }

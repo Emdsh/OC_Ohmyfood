@@ -45,6 +45,22 @@ h1, h2 {
     opacity: 1;
   }
 }
+@-webkit-keyframes checkmark-rotate {
+  from {
+    transform: rotate(1turn);
+  }
+  to {
+    transform: rotate(0);
+  }
+}
+@keyframes checkmark-rotate {
+  from {
+    transform: rotate(1turn);
+  }
+  to {
+    transform: rotate(0);
+  }
+}
 .restaurant__tile {
   width: calc(100vw - 2rem);
   background-color: white;
@@ -320,35 +336,46 @@ h1, h2 {
   bottom: -5px;
 }
 .carte__menu-item {
+  background-color: white;
   display: flex;
   border-radius: 1rem;
   margin-bottom: 1rem;
   max-height: 4.5rem;
+  max-width: calc(100vw - 2rem);
+  overflow: hidden;
   box-shadow: 0 5px 5px 0 #dbdbdb;
 }
 .carte__menu-item:hover {
   box-shadow: 0 5px 5px 0 #cecece;
 }
-.carte__menu-item:hover .checkbox::after {
+.carte__menu-item .checkbox {
+  background-color: #99e2d0;
+  transform: translateX(25%);
+  transition: transform 0.75s ease-in-out 0.25s;
+}
+.carte__menu-item .checkbox::after {
   font-family: "Font Awesome 5 Free";
   font-weight: 700;
   content: "";
   font-size: 1.5rem;
   color: white;
-  background-color: #99e2d0;
-  border-radius: 0 1rem 1rem 0;
-  padding: calc(1.45rem - .5px) 1.25rem;
+  padding: 1.5rem 1.25rem;
   display: inline-block;
 }
+.carte__menu-item:hover .checkbox {
+  transform: translateX(0);
+}
+.carte__menu-item:hover .checkbox::after {
+  -webkit-animation: checkmark-rotate 1s;
+          animation: checkmark-rotate 1s;
+}
 .carte__menu-item:hover .carte__menu-text {
-  border-radius: 1rem 0 0 1rem;
-  width: calc((100vw - 2rem) - 4rem);
+  min-width: calc((100vw - 2rem) - 4rem);
 }
 .carte__menu-text {
-  background-color: white;
   padding: 1rem;
-  border-radius: 1rem;
-  width: calc(100vw - 2rem);
+  min-width: calc(100vw - 2rem);
+  transition: min-width 0.75s ease-in-out;
 }
 .carte__menu-text label {
   width: calc(100% - 2rem);
