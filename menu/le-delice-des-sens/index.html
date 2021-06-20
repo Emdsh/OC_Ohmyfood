@@ -36,7 +36,11 @@
         <meta name="twitter:site" content="@EmbitiousDev"/>
         <meta name="twitter:creator" content="@EmbitiousDev"/>
     </head>
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> feature/homepage
     <body>
         <header class="header">
             <nav class="header__website-name">
@@ -54,142 +58,187 @@
         </div>
 
         <main class="carte">
-            <h1>Le délice des sens<i class="fas fa-heart heart"></i></h1>
+            <header>
+                <h1>Le délice des sens</h1>
+                <div class="heart"></div>
+            </header>
 
             <form>
                 <fieldset>
-                    <legend class="carte__section-title">Entrées</legend>
+                    <legend class="carte__section-title carte__menu-item--1">Entrées</legend>
 
-                    <div class="carte__menu-item--flex">
-                        <input type="checkbox" id="entree-1" class="carte__menu-item--checkbox"/>
+                    <ul>
+                        <li class="carte__menu-item carte__menu-item--1">
+                            <div class="carte__menu-text">
+                                <input type="checkbox" id="entree-1"/>
 
-                        <label for="entree-1" class="carte__menu-item">
-                            <div class="carte__menu-item--text">
-                                <strong>Tartare de thon</strong>
-                                <span class="carte__menu-item--description">Assaisonné au yuzu</span>
+                                <label for="entree-1">
+                                    <strong>Tartare de thon</strong>
+                                </label>
+    
+                                <p class="carte__menu-text--description">
+                                    <span class="carte__menu-text--description-content">Assaisonné au yuzu</span>
+                                    <span class="carte__menu-text--price">25€</span>
+                                </p>
                             </div>
-                        
-                            <strong class="carte__menu-item--price">25€</strong>
-                        </label>
-                    </div>
-                    
-                    <div class="carte__menu-item--flex">
-                        <input type="checkbox" id="entree-2" class="carte__menu-item--checkbox"/>
+                            
+                            <div class="checkbox"></div>
+                        </li>
 
-                        <label for="entree-2" class="carte__menu-item">
-                            <div class="carte__menu-item--text">
-                                <strong>Bouchée de homard croustillant</strong>
-                                <span class="carte__menu-item--description">Et sa farandole de petits légumes</span>
-                            </div>
-                        
-                            <strong class="carte__menu-item--price">35€</strong>
-                        </label>
-                    </div>
-                    
-                    <div class="carte__menu-item--flex">
-                        <input type="checkbox" id="entree-3" class="carte__menu-item--checkbox"/>
+                        <li class="carte__menu-item carte__menu-item--2">
+                            <div class="carte__menu-text">
+                                <input type="checkbox" id="entree-2"/>
 
-                        <label for="entree-3" class="carte__menu-item">
-                            <div class="carte__menu-item--text">
-                                <strong>Velouté de cèpes</strong>
-                                <span class="carte__menu-item--description">Aux truffes</span>
+                                <label for="entree-2">
+                                    <strong>Bouchée de homard croustillant</strong>
+                                </label>
+    
+                                <p class="carte__menu-text--description">
+                                    <span class="carte__menu-text--description-content">Et sa farandole de petits légumes</span>
+                                    <span class="carte__menu-text--price">35€</span>
+                                </p>
                             </div>
-                        
-                            <strong class="carte__menu-item--price">20€</strong>
-                        </label>
-                    </div>
+                            
+                            <div class="checkbox"></div>
+                        </li>
+
+                        <li class="carte__menu-item carte__menu-item--3">
+                            <div class="carte__menu-text">
+                                <input type="checkbox" id="entree-3"/>
+
+                                <label for="entree-3">
+                                    <strong>Velouté de cèpes</strong>
+                                </label> 
+                                
+                                <p class="carte__menu-text--description">
+                                    <span class="carte__menu-text--description-content">Aux truffes</span>
+                                    <span class="carte__menu-text--price">20€</span>
+                                </p>
+                            </div>
+                            
+                            <div class="checkbox"></div>
+                        </li>
+                    </ul>
                 </fieldset>
 
                 <fieldset>
-                    <legend class="carte__section-title">Plats</legend>
+                    <legend class="carte__section-title carte__menu-item--4">Plats</legend>
 
-                    <div class="carte__menu-item--flex">
-                        <input type="checkbox" id="main-1" class="carte__menu-item--checkbox"/>
+                    <ul>
+                        <li class="carte__menu-item carte__menu-item--4">
+                            <div class="carte__menu-text">
+                                <input type="checkbox" id="main-1"/>
 
-                        <label for="main-1" class="carte__menu-item">
-                            <div class="carte__menu-item--text">
-                                <strong>Poulet rôti aux herbes de Provence</strong>
-                                <span class="carte__menu-item--description">Et sa crème de truffe</span>
+                                <label for="main-1">
+                                    <strong>Poulet rôti aux herbes de Provence</strong>
+                                </label>
+    
+                                <p class="carte__menu-text--description">
+                                    <span class="carte__menu-text--description-content">Et sa crème de truffe</span>
+                                    <span class="carte__menu-text--price">40€</span>
+                                </p>
                             </div>
-                        
-                            <strong class="carte__menu-item--price">40€</strong>
-                        </label>
-                    </div>
-                    
-                    <div class="carte__menu-item--flex">
-                        <input type="checkbox" id="main-2" class="carte__menu-item--checkbox"/>
+                            
+                            <div class="checkbox"></div>
+                        </li>
 
-                        <label for="main-2" class="carte__menu-item">
-                            <div class="carte__menu-item--text">
-                                <strong>Langouste rôtie</strong>
-                                <span class="carte__menu-item--description">Et ses légumes de saison</span>
-                            </div>
-                        
-                            <strong class="carte__menu-item--price">35€</strong>
-                        </label>
-                    </div>
-                    
-                    <div class="carte__menu-item--flex">
-                        <input type="checkbox" id="main-3" class="carte__menu-item--checkbox"/>
+                        <li class="carte__menu-item carte__menu-item--5">
+                            <div class="carte__menu-text">
+                                <input type="checkbox" id="main-2"/>
 
-                        <label for="main-3" class="carte__menu-item">
-                            <div class="carte__menu-item--text">
-                                <strong>Côte de boeuf Angus</strong>
-                                <span class="carte__menu-item--description">Et sa purée de panais</span>
+                                <label for="main-2">
+                                    <strong>Langouste rôtie</strong>
+                                </label>
+    
+                                <p class="carte__menu-text--description">
+                                    <span class="carte__menu-text--description-content">Et ses légumes de saison</span>
+                                    <span class="carte__menu-text--price">35€</span>
+                                </p>
                             </div>
-                        
-                            <strong class="carte__menu-item--price">44€</strong>
-                        </label>
-                    </div>
+                            
+                            <div class="checkbox"></div>
+                        </li>
+
+                        <li class="carte__menu-item carte__menu-item--6">
+                            <div class="carte__menu-text">
+                                <input type="checkbox" id="main-3"/>
+
+                                <label for="main-3">
+                                    <strong>Côte de boeuf Angus</strong>
+                                </label>
+    
+                                <p class="carte__menu-text--description">
+                                    <span class="carte__menu-text--description-content">Et sa purée de panais</span>
+                                    <span class="carte__menu-text--price">44€</span>
+                                </p>
+                            </div>
+                            
+                            <div class="checkbox"></div>
+                        </li>
+                    </ul>
                 </fieldset>
 
                 <fieldset>
-                    <legend class="carte__section-title">Desserts</legend>
+                    <legend class="carte__section-title carte__menu-item--7">Desserts</legend>
 
-                    <div class="carte__menu-item--flex">
-                        <input type="checkbox" id="dessert-1" class="carte__menu-item--checkbox"/>
+                    <ul>
+                        <li class="carte__menu-item carte__menu-item--7">
+                            <div class="carte__menu-text">
+                                <input type="checkbox" id="dessert-1"/>
 
-                        <label for="dessert-1" class="carte__menu-item">
-                            <div class="carte__menu-item--text">
-                                <strong>Farandole de desserts</strong>
-                                <span class="carte__menu-item--description">Du chef</span>
+                                <label for="dessert-1">
+                                    <strong>Farandole de desserts</strong>
+                                </label>
+    
+                                <p class="carte__menu-text--description">
+                                    <span class="carte__menu-text--description-content">Du chef</span>
+                                    <span class="carte__menu-text--price">18€</span>
+                                </p>
                             </div>
-                        
-                            <strong class="carte__menu-item--price">18€</strong>
-                        </label>
-                    </div>
-                    
-                    <div class="carte__menu-item--flex">
-                        <input type="checkbox" id="dessert-2" class="carte__menu-item--checkbox"/>
+                            
+                            <div class="checkbox"></div>
+                        </li>
 
-                        <label for="dessert-2" class="carte__menu-item">
-                            <div class="carte__menu-item--text">
-                                <strong>Crème brulée</strong>
-                                <span class="carte__menu-item--description">Revisitée</span>
-                            </div>
-                        
-                            <strong class="carte__menu-item--price">22€</strong>
-                        </label>
-                    </div>
-                    
-                    <div class="carte__menu-item--flex">
-                        <input type="checkbox" id="dessert-3" class="carte__menu-item--checkbox"/>
+                        <li class="carte__menu-item carte__menu-item--8">
+                            <div class="carte__menu-text">
+                                <input type="checkbox" id="dessert-2"/>
 
-                        <label for="dessert-3" class="carte__menu-item">
-                            <div class="carte__menu-item--text">
-                                <strong>Tiramisu</strong>
-                                <span class="carte__menu-item--description">À la noisette</span>
+                                <label for="dessert-2">
+                                    <strong>Crème brulée</strong>
+                                </label>
+    
+                                <p class="carte__menu-text--description">
+                                    <span class="carte__menu-text--description-content">Revisitée</span>
+                                    <span class="carte__menu-text--price">22€</span>
+                                </p>
                             </div>
-                        
-                            <strong class="carte__menu-item--price">23€</strong>
-                        </label>
-                    </div>
+                            
+                            <div class="checkbox"></div>
+                        </li>
+
+                        <li class="carte__menu-item carte__menu-item--9">
+                            <div class="carte__menu-text">
+                                <input type="checkbox" id="dessert-3"/>
+
+                                <label for="dessert-3">
+                                    <strong>Tiramisu</strong>
+                                </label>
+    
+                                <p class="carte__menu-text--description">
+                                    <span class="carte__menu-text--description-content">À la noisette</span>
+                                    <span class="carte__menu-text--price">23€</span>
+                                </p>
+                            </div>
+                            
+                            <div class="checkbox"></div>
+                        </li>
+                    </ul>
                 </fieldset>
-
-                <div class="carte__order-button-container">
-                    <button type="submit" class="carte__order-button">Commander</button>
-                </div>
             </form>
+
+            <footer class="carte__order-button-container">
+                <button type="submit" class="carte__order-button">Commander</button>
+            </footer>
         </main>
 
         <footer class="footer">

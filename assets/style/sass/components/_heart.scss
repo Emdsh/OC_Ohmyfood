@@ -1,14 +1,19 @@
 @use '../components' as *;
 
 @mixin heart {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    content: "\f004";
     font-size: 1.5rem;
     -webkit-text-stroke: 1px black;
     -webkit-text-fill-color: transparent;
-    padding-right: .5rem;
+    padding: 0 0.5rem;
+}
 
-    &:hover {
-        background: -webkit-linear-gradient(bottom left, color(secondary), color(primary));
-        background-clip: text;
-        -webkit-text-stroke: transparent;
-    }
+@mixin heart-hover {
+    background: -webkit-linear-gradient(bottom left, color(secondary), color(primary));
+    background-clip: text;
+    -webkit-text-stroke: transparent;
+    transform: scale(1.025);
+    @include heart-fill;
 }

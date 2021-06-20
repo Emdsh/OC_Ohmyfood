@@ -2,7 +2,7 @@
 @use './functions' as *;
 
 @mixin area-padding {
-    padding: 2.5rem 1.5rem;
+    padding: 2.5rem 1rem;
 }
 
 @mixin shadow {
@@ -11,4 +11,12 @@
     &:hover {
         box-shadow: 0 5px 5px 0 lighten(color(accent), 60);
     }
+}
+
+@mixin ellipsis {
+    width: calc(100% - 2rem);
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis;    
 }

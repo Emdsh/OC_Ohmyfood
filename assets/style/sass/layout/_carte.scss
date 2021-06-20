@@ -26,21 +26,39 @@
         left: 0;
     }
 
-    h1 {
-        font-family: 'Shrikhand', sans-serif;
+    header {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 1rem;
+        align-items: center;
+        position: relative;
+        top: -.5rem;
+    }
 
-        .heart {
+    fieldset {
+        margin-top: 1.5rem;
+    }
+
+    h1 {
+        font-family: 'Shrikhand', sans-serif;
+        font-size: 1.75rem;
+    }
+
+    .heart {
+        margin-right: 1rem;
+
+        &::after {
             @include heart;
+        }
+
+        &:hover::after {
+            @include heart-hover;
         }
     }
 
     &__section-title {
         text-transform: uppercase;
         font-weight: 100;
-        margin: 1rem 0;
+        margin-bottom: 1.25rem;
         position: relative;
 
         &::after {
@@ -54,49 +72,87 @@
         }
     }
 
-    &__menu-item {
-        background-color: white;
-        display: flex;
-        justify-content: space-between;
-        padding: 1rem;
-        border-radius: 1rem;
-        width: 100%;
-        margin-bottom: 1rem;
-        @include shadow;
+    &__menu {
+        $menu: &;
 
-        &--text {
+        &-item {
+            background-color: white;
             display: flex;
-            flex-direction: column;
-            white-space: nowrap;
+            border-radius: 1rem;
+            margin-bottom: 1rem;
+            max-height: 4.5rem;
+            max-width: calc(100vw - 2rem);
             overflow: hidden;
-            text-overflow: ellipsis;
-        }
+            @include shadow;
 
-        &--description {
-            font-weight: 100;
-            font-size: .8rem;
-            margin-top: .2rem
-        }
+            .checkbox {
+                background-color: color(tertiary);
+                transform: translateX(25%);
+                transition: transform .75s ease-in-out .25s;
 
-        &--price {
-            align-self: flex-end;
-            font-size: .8rem;
-        }
+                &::after {
+                    @include checkmark;
+                    
+                }
+            }
 
-        &--checkbox {
-            display: none;
+            &:hover {
+                .checkbox {
+                    transform: translateX(0);
 
-            &:hover, &:checked {
-                display: unset;
-                margin: 1rem;
+                    &::after {
+                        @include checkmark-rotate;
+                    }
+                }
+
+                & #{$menu}-text {
+                    min-width: calc((100vw - 2rem) - 4rem);
+                }
+            }
+
+            @for $i from 1 to 11 {
+                &--#{$i} {
+                    @include menu-item-fade-in($i);
+                }
             }
         }
 
-        &--flex {
-            display: flex;
-            flex-direction: row-reverse;
+        &-text {
+            padding: 1rem;
+            min-width: calc(100vw - 2rem);
+            transition: min-width .75s ease-in-out;
+            
+            label {
+                @include ellipsis;
+            }
+
+            input {
+                display: none;
+
+                /*&:checked {
+                    .checkbox::after {
+                        @include checkmark;
+                    }
+                }*/
+            }
+
+            &--description {
+                font-weight: 100;
+                font-size: .8rem;
+                margin-top: .2rem;
+                display: flex;
+                justify-content: space-between;
+    
+                &-content {
+                    @include ellipsis;
+                }
+            }
+
+            &--price {
+                font-weight: 700;
+            }
         }
-    }
+    }    
 
     &__order-button {
         @include main-button;
