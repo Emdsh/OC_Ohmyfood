@@ -1,4 +1,8 @@
-@keyframes heart-fill {
+@mixin heart-fill {
+    animation: heart-fill-anim .2s ease-in-out;
+}
+
+@keyframes heart-fill-anim {
     from {
         opacity: 0;
     }
@@ -7,9 +11,13 @@
     }
 }
 
-@keyframes checkmark-rotate {
+@mixin checkmark-rotate {
+    animation: checkmark-rotate-anim 1s;
+}
+
+@keyframes checkmark-rotate-anim {
     from {
-        transform: rotate(1turn);;
+        transform: rotate(-2turn);;
     }
     to {
         transform: rotate(0);
@@ -17,7 +25,7 @@
 }
 
 @mixin menu-item-fade-in($i) {
-    animation: menu-item-fade-in-anim .2s ease-in-out ($i*.1s)-.1s backwards;
+    animation: menu-item-fade-in-anim .4s ease-in-out ($i*.2s)-.2s backwards;
 }
 
 @keyframes menu-item-fade-in-anim {

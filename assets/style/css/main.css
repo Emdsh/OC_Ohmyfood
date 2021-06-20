@@ -28,7 +28,7 @@ h1, h2 {
   font-size: 1.5rem;
 }
 
-@-webkit-keyframes heart-fill {
+@-webkit-keyframes heart-fill-anim {
   from {
     opacity: 0;
   }
@@ -37,7 +37,7 @@ h1, h2 {
   }
 }
 
-@keyframes heart-fill {
+@keyframes heart-fill-anim {
   from {
     opacity: 0;
   }
@@ -45,17 +45,17 @@ h1, h2 {
     opacity: 1;
   }
 }
-@-webkit-keyframes checkmark-rotate {
+@-webkit-keyframes checkmark-rotate-anim {
   from {
-    transform: rotate(1turn);
+    transform: rotate(-2turn);
   }
   to {
     transform: rotate(0);
   }
 }
-@keyframes checkmark-rotate {
+@keyframes checkmark-rotate-anim {
   from {
-    transform: rotate(1turn);
+    transform: rotate(-2turn);
   }
   to {
     transform: rotate(0);
@@ -129,8 +129,8 @@ h1, h2 {
           background-clip: text;
   -webkit-text-stroke: transparent;
   transform: scale(1.025);
-  -webkit-animation: heart-fill 0.2s ease-in-out;
-          animation: heart-fill 0.2s ease-in-out;
+  -webkit-animation: heart-fill-anim 0.2s ease-in-out;
+          animation: heart-fill-anim 0.2s ease-in-out;
 }
 .restaurant__tile--new {
   font-weight: 500;
@@ -341,8 +341,8 @@ h1, h2 {
           background-clip: text;
   -webkit-text-stroke: transparent;
   transform: scale(1.025);
-  -webkit-animation: heart-fill 0.2s ease-in-out;
-          animation: heart-fill 0.2s ease-in-out;
+  -webkit-animation: heart-fill-anim 0.2s ease-in-out;
+          animation: heart-fill-anim 0.2s ease-in-out;
 }
 .carte__section-title {
   text-transform: uppercase;
@@ -390,51 +390,51 @@ h1, h2 {
   transform: translateX(0);
 }
 .carte__menu-item:hover .checkbox::after {
-  -webkit-animation: checkmark-rotate 1s;
-          animation: checkmark-rotate 1s;
+  -webkit-animation: checkmark-rotate-anim 1s;
+          animation: checkmark-rotate-anim 1s;
 }
 .carte__menu-item:hover .carte__menu-text {
   min-width: calc((100vw - 2rem) - 4rem);
 }
 .carte__menu-item--1 {
-  -webkit-animation: menu-item-fade-in-anim 0.2s ease-in-out 0s backwards;
-          animation: menu-item-fade-in-anim 0.2s ease-in-out 0s backwards;
+  -webkit-animation: menu-item-fade-in-anim 0.4s ease-in-out 0s backwards;
+          animation: menu-item-fade-in-anim 0.4s ease-in-out 0s backwards;
 }
 .carte__menu-item--2 {
-  -webkit-animation: menu-item-fade-in-anim 0.2s ease-in-out 0.1s backwards;
-          animation: menu-item-fade-in-anim 0.2s ease-in-out 0.1s backwards;
+  -webkit-animation: menu-item-fade-in-anim 0.4s ease-in-out 0.2s backwards;
+          animation: menu-item-fade-in-anim 0.4s ease-in-out 0.2s backwards;
 }
 .carte__menu-item--3 {
-  -webkit-animation: menu-item-fade-in-anim 0.2s ease-in-out 0.2s backwards;
-          animation: menu-item-fade-in-anim 0.2s ease-in-out 0.2s backwards;
+  -webkit-animation: menu-item-fade-in-anim 0.4s ease-in-out 0.4s backwards;
+          animation: menu-item-fade-in-anim 0.4s ease-in-out 0.4s backwards;
 }
 .carte__menu-item--4 {
-  -webkit-animation: menu-item-fade-in-anim 0.2s ease-in-out 0.3s backwards;
-          animation: menu-item-fade-in-anim 0.2s ease-in-out 0.3s backwards;
+  -webkit-animation: menu-item-fade-in-anim 0.4s ease-in-out 0.6s backwards;
+          animation: menu-item-fade-in-anim 0.4s ease-in-out 0.6s backwards;
 }
 .carte__menu-item--5 {
-  -webkit-animation: menu-item-fade-in-anim 0.2s ease-in-out 0.4s backwards;
-          animation: menu-item-fade-in-anim 0.2s ease-in-out 0.4s backwards;
+  -webkit-animation: menu-item-fade-in-anim 0.4s ease-in-out 0.8s backwards;
+          animation: menu-item-fade-in-anim 0.4s ease-in-out 0.8s backwards;
 }
 .carte__menu-item--6 {
-  -webkit-animation: menu-item-fade-in-anim 0.2s ease-in-out 0.5s backwards;
-          animation: menu-item-fade-in-anim 0.2s ease-in-out 0.5s backwards;
+  -webkit-animation: menu-item-fade-in-anim 0.4s ease-in-out 1s backwards;
+          animation: menu-item-fade-in-anim 0.4s ease-in-out 1s backwards;
 }
 .carte__menu-item--7 {
-  -webkit-animation: menu-item-fade-in-anim 0.2s ease-in-out 0.6s backwards;
-          animation: menu-item-fade-in-anim 0.2s ease-in-out 0.6s backwards;
+  -webkit-animation: menu-item-fade-in-anim 0.4s ease-in-out 1.2s backwards;
+          animation: menu-item-fade-in-anim 0.4s ease-in-out 1.2s backwards;
 }
 .carte__menu-item--8 {
-  -webkit-animation: menu-item-fade-in-anim 0.2s ease-in-out 0.7s backwards;
-          animation: menu-item-fade-in-anim 0.2s ease-in-out 0.7s backwards;
+  -webkit-animation: menu-item-fade-in-anim 0.4s ease-in-out 1.4s backwards;
+          animation: menu-item-fade-in-anim 0.4s ease-in-out 1.4s backwards;
 }
 .carte__menu-item--9 {
-  -webkit-animation: menu-item-fade-in-anim 0.2s ease-in-out 0.8s backwards;
-          animation: menu-item-fade-in-anim 0.2s ease-in-out 0.8s backwards;
+  -webkit-animation: menu-item-fade-in-anim 0.4s ease-in-out 1.6s backwards;
+          animation: menu-item-fade-in-anim 0.4s ease-in-out 1.6s backwards;
 }
 .carte__menu-item--10 {
-  -webkit-animation: menu-item-fade-in-anim 0.2s ease-in-out 0.9s backwards;
-          animation: menu-item-fade-in-anim 0.2s ease-in-out 0.9s backwards;
+  -webkit-animation: menu-item-fade-in-anim 0.4s ease-in-out 1.8s backwards;
+          animation: menu-item-fade-in-anim 0.4s ease-in-out 1.8s backwards;
 }
 .carte__menu-text {
   padding: 1rem;

@@ -101,7 +101,7 @@
                     transform: translateX(0);
 
                     &::after {
-                        animation: checkmark-rotate 1s;
+                        @include checkmark-rotate;
                     }
                 }
 
