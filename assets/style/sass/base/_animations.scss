@@ -15,3 +15,20 @@
         transform: rotate(0);
     }
 }
+
+@mixin menu-item-fade-in($i) {
+    animation: menu-item-fade-in-anim .2s ease-in-out ($i*.1s)-.1s backwards;
+}
+
+@keyframes menu-item-fade-in-anim {
+    0% {
+        opacity: 0;
+        transform: translateY(10%);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

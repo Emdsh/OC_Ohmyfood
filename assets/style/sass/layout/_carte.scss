@@ -109,6 +109,12 @@
                     min-width: calc((100vw - 2rem) - 4rem);
                 }
             }
+
+            @for $i from 1 to 11 {
+                &--#{$i} {
+                    @include menu-item-fade-in($i);
+                }
+            }
         }
 
         &-text {
