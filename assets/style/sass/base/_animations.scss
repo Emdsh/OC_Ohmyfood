@@ -11,19 +11,6 @@
     }
 }
 
-@mixin checkmark-rotate {
-    animation: checkmark-rotate-anim 1s;
-}
-
-@keyframes checkmark-rotate-anim {
-    from {
-        transform: rotate(-2turn);;
-    }
-    to {
-        transform: rotate(0);
-    }
-}
-
 @mixin menu-item-fade-in($i) {
     animation: menu-item-fade-in-anim .4s ease-in-out ($i*.2s)-.2s backwards;
 }
@@ -38,5 +25,18 @@
     }
     100% {
         transform: translateY(0);
+    }
+}
+
+@mixin checkmark-rotate {
+    animation: checkmark-rotate-anim 1s;
+}
+
+@keyframes checkmark-rotate-anim {
+    from {
+        transform: rotate(-2turn);;
+    }
+    to {
+        transform: rotate(0);
     }
 }

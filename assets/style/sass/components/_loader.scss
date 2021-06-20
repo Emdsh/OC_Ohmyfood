@@ -1,0 +1,8 @@
+@use '../components' as *;
+
+.loader {
+    background-color: color(accent);
+    width: 100vw;
+    height: 100vh;
+    // display: none;
+}

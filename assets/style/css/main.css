@@ -45,22 +45,6 @@ h1, h2 {
     opacity: 1;
   }
 }
-@-webkit-keyframes checkmark-rotate-anim {
-  from {
-    transform: rotate(-2turn);
-  }
-  to {
-    transform: rotate(0);
-  }
-}
-@keyframes checkmark-rotate-anim {
-  from {
-    transform: rotate(-2turn);
-  }
-  to {
-    transform: rotate(0);
-  }
-}
 @-webkit-keyframes menu-item-fade-in-anim {
   0% {
     opacity: 0;
@@ -83,6 +67,22 @@ h1, h2 {
   }
   100% {
     transform: translateY(0);
+  }
+}
+@-webkit-keyframes checkmark-rotate-anim {
+  from {
+    transform: rotate(-2turn);
+  }
+  to {
+    transform: rotate(0);
+  }
+}
+@keyframes checkmark-rotate-anim {
+  from {
+    transform: rotate(-2turn);
+  }
+  to {
+    transform: rotate(0);
   }
 }
 .restaurant__tile {
@@ -141,6 +141,12 @@ h1, h2 {
   border-radius: 0.25rem;
   position: absolute;
   right: 1rem;
+}
+
+.loader {
+  background-color: #353535;
+  width: 100vw;
+  height: 100vh;
 }
 
 .header {
