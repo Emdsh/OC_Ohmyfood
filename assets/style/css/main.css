@@ -129,8 +129,8 @@ h1, h2 {
           background-clip: text;
   -webkit-text-stroke: transparent;
   transform: scale(1.025);
-  -webkit-animation: heart-fill-anim 0.2s ease-in-out;
-          animation: heart-fill-anim 0.2s ease-in-out;
+  -webkit-animation: heart-fill-anim 0.4s ease-in-out;
+          animation: heart-fill-anim 0.4s ease-in-out;
 }
 .restaurant__tile--new {
   font-weight: 500;
@@ -145,10 +145,162 @@ h1, h2 {
 
 .loader {
   background-color: #353535;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: baseline;
+  -webkit-animation: loader 0.75s ease-out 2.25s forwards;
+          animation: loader 0.75s ease-out 2.25s forwards;
+}
+.loader__ohmyfood {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  width: 17.5rem;
+  background: -webkit-linear-gradient(left, #ff79da, #99e2d0, #9356dc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  display: inline-block;
+  transform-origin: left;
+  -webkit-animation: text-in 0.5s ease-in, crash-left 0.75s ease-out 0.5s;
+          animation: text-in 0.5s ease-in, crash-left 0.75s ease-out 0.5s;
+}
+.loader__circle {
+  margin-top: 2.5rem;
+  display: grid;
+  grid-template: "circle" 5rem/5rem;
+}
+.loader__circle--dark {
+  width: 5rem;
+  height: 5rem;
+  border: 0.5rem solid white;
+  border-radius: 50%;
+  grid-area: circle;
+  -webkit-animation: spin 1.5s ease-in-out infinite;
+          animation: spin 1.5s ease-in-out infinite;
+  border-color: #282828;
+}
+.loader__circle--primary {
+  width: 5rem;
+  height: 5rem;
+  border: 0.5rem solid white;
+  border-radius: 50%;
+  grid-area: circle;
+  -webkit-animation: spin 1.5s ease-in-out infinite;
+          animation: spin 1.5s ease-in-out infinite;
+  border-color: #9356dc transparent transparent;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+.loader__circle--secondary {
+  width: 5rem;
+  height: 5rem;
+  border: 0.5rem solid white;
+  border-radius: 50%;
+  grid-area: circle;
+  -webkit-animation: spin 1.5s ease-in-out infinite;
+          animation: spin 1.5s ease-in-out infinite;
+  border-color: #ff79da transparent transparent;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+.loader__circle--tertiary {
+  width: 5rem;
+  height: 5rem;
+  border: 0.5rem solid white;
+  border-radius: 50%;
+  grid-area: circle;
+  -webkit-animation: spin 1.5s ease-in-out infinite;
+          animation: spin 1.5s ease-in-out infinite;
+  border-color: #99e2d0 transparent transparent;
 }
 
+@-webkit-keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    height: 0;
+  }
+}
+
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    height: 0;
+  }
+}
+@-webkit-keyframes text-in {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 17.5rem;
+  }
+}
+@keyframes text-in {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 17.5rem;
+  }
+}
+@-webkit-keyframes crash-left {
+  0% {
+    transform: skewX(0) scaleX(1);
+  }
+  33% {
+    transform: skewX(7.5deg) scaleX(0.75);
+  }
+  100% {
+    transform: translateX(0) skewX(0) scaleX(1);
+  }
+}
+@keyframes crash-left {
+  0% {
+    transform: skewX(0) scaleX(1);
+  }
+  33% {
+    transform: skewX(7.5deg) scaleX(0.75);
+  }
+  100% {
+    transform: translateX(0) skewX(0) scaleX(1);
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
 .header {
   text-align: center;
   display: flex;
@@ -348,8 +500,8 @@ h1, h2 {
           background-clip: text;
   -webkit-text-stroke: transparent;
   transform: scale(1.025);
-  -webkit-animation: heart-fill-anim 0.2s ease-in-out;
-          animation: heart-fill-anim 0.2s ease-in-out;
+  -webkit-animation: heart-fill-anim 0.4s ease-in-out;
+          animation: heart-fill-anim 0.4s ease-in-out;
 }
 .carte__section-title {
   text-transform: uppercase;

@@ -22,6 +22,6 @@ $colors: (
     accent: (
         base: $color-accent,
         light: lighten($color-accent, 75),
-        dark: darken($color-tertiary, 40),
+        dark: darken($color-accent, 5),
     ),
 )
