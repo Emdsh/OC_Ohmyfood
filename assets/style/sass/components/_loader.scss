@@ -24,18 +24,15 @@
         font-family: 'Shrikhand', sans-serif;
         font-size: 3rem;
         text-align: center;
-        width: 17.5rem;
-        background: -webkit-linear-gradient(left, color(secondary), color(tertiary), color(primary));
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
+        width: 16.5rem;
+        color: white;
         overflow: hidden;
         white-space: nowrap;
         margin: 0 auto;
         display: inline-block;
         transform-origin: left;
         animation: text-in .5s ease-in,
-        crash-left .75s ease-out .5s;
+                   crash-left .75s ease-out .5s;
     }
 
     &__circle {

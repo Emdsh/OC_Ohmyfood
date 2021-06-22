@@ -159,11 +159,8 @@ h1, h2 {
   font-family: "Shrikhand", sans-serif;
   font-size: 3rem;
   text-align: center;
-  width: 17.5rem;
-  background: -webkit-linear-gradient(left, #ff79da, #99e2d0, #9356dc);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  width: 16.5rem;
+  color: white;
   overflow: hidden;
   white-space: nowrap;
   margin: 0 auto;
