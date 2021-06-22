@@ -213,9 +213,9 @@ h1, h2 {
 }
 .loader__pan {
   width: 7.5rem;
-  color: #282828;
-  background-color: #282828;
-  border: 1rem solid #282828;
+  color: #1c1c1c;
+  background-color: #1c1c1c;
+  border: 1rem solid #1c1c1c;
   border-radius: 0 0 2rem 2rem;
   transform: translate(0, -1.5rem);
   transform-origin: top right;
@@ -227,7 +227,7 @@ h1, h2 {
   width: 4.5rem;
   height: 0.5rem;
   border-radius: 0 0.5rem 0.5rem 0;
-  background-color: #282828;
+  background-color: #1c1c1c;
   display: inline-block;
   position: absolute;
   transform: translate(6rem, -1rem);
@@ -279,7 +279,7 @@ h1, h2 {
     transform: skewX(0) scaleX(1);
   }
   33% {
-    transform: skewX(7.5deg) scaleX(0.75);
+    transform: skewX(15deg) scaleX(0.75);
   }
   100% {
     transform: translateX(0) skewX(0) scaleX(1);
@@ -290,7 +290,7 @@ h1, h2 {
     transform: skewX(0) scaleX(1);
   }
   33% {
-    transform: skewX(7.5deg) scaleX(0.75);
+    transform: skewX(15deg) scaleX(0.75);
   }
   100% {
     transform: translateX(0) skewX(0) scaleX(1);
