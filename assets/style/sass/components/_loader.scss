@@ -11,6 +11,10 @@
 }
 
 .loader {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999;
     background-color: color(accent);
     width: 100%;
     height: 100vh;
@@ -19,7 +23,7 @@
     align-items: center;
     justify-content: center;
     align-content: baseline;
-    animation: loader .75s ease-out 2.25s forwards;
+    animation: loader .5s ease-in-out 2.5s forwards;
 
     &__ohmyfood {
         font-family: 'Shrikhand', sans-serif;
@@ -84,14 +88,13 @@
     0% {
         opacity: 1;
     }
-    60% {
-        opacity: 0;
-        transform: translateY(0);
+    99% {
+        z-index: 9999;
     }
     100% {
-        height: 0;
         opacity: 0;
-        transform: translateY(-5rem);
+        z-index: -1;
+        visibility: hidden;
     }
 }
 

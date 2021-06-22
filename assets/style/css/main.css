@@ -144,6 +144,10 @@ h1, h2 {
 }
 
 .loader {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9999;
   background-color: #353535;
   width: 100%;
   height: 100vh;
@@ -152,8 +156,8 @@ h1, h2 {
   align-items: center;
   justify-content: center;
   align-content: baseline;
-  -webkit-animation: loader 0.75s ease-out 2.25s forwards;
-          animation: loader 0.75s ease-out 2.25s forwards;
+  -webkit-animation: loader 0.5s ease-in-out 2.5s forwards;
+          animation: loader 0.5s ease-in-out 2.5s forwards;
 }
 .loader__ohmyfood {
   font-family: "Shrikhand", sans-serif;
@@ -235,14 +239,13 @@ h1, h2 {
   0% {
     opacity: 1;
   }
-  60% {
-    opacity: 0;
-    transform: translateY(0);
+  99% {
+    z-index: 9999;
   }
   100% {
-    height: 0;
     opacity: 0;
-    transform: translateY(-5rem);
+    z-index: -1;
+    visibility: hidden;
   }
 }
 
@@ -250,14 +253,13 @@ h1, h2 {
   0% {
     opacity: 1;
   }
-  60% {
-    opacity: 0;
-    transform: translateY(0);
+  99% {
+    z-index: 9999;
   }
   100% {
-    height: 0;
     opacity: 0;
-    transform: translateY(-5rem);
+    z-index: -1;
+    visibility: hidden;
   }
 }
 @-webkit-keyframes text-in {
