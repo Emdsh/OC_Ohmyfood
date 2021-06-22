@@ -29,8 +29,6 @@
         color: white;
         overflow: hidden;
         white-space: nowrap;
-        margin: 0 auto;
-        display: inline-block;
         transform-origin: bottom left;
         animation: text-in .5s ease-in,
                    crash-left .75s ease-out .5s;
@@ -88,10 +86,12 @@
     }
     60% {
         opacity: 0;
+        transform: translateY(0);
     }
     100% {
-        opacity: 0;
         height: 0;
+        opacity: 0;
+        transform: translateY(-5rem);
     }
 }
 
@@ -100,19 +100,19 @@
         width: 0;
     }
     100% {
-        width: 17.5rem;
+        width: 16.5rem;
     }
 }
 
 @keyframes crash-left {
     0% {
-        transform: skewX(0) scaleX(1);
+        transform: skew(0) scaleX(1);
     }
     33% {
-        transform: skewX(15deg) scaleX(.75);
+        transform: skew(15deg) scaleX(.75);
     }
     100% {
-        transform: translateX(0) skewX(0) scaleX(1);
+        transform: skew(0) scaleX(1);
     }
 }
 
@@ -135,10 +135,7 @@
     23% {
         transform: translate(0, -1.25rem) rotate(10deg);
     }
-    58% {
-        transform: translate(0, -1.5rem) rotate(0);
-    }
-    100% {
+    43% {
         transform: translate(0, -1.5rem) rotate(0);
     }
 }

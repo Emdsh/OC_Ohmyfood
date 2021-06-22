@@ -163,8 +163,6 @@ h1, h2 {
   color: white;
   overflow: hidden;
   white-space: nowrap;
-  margin: 0 auto;
-  display: inline-block;
   transform-origin: bottom left;
   -webkit-animation: text-in 0.5s ease-in, crash-left 0.75s ease-out 0.5s;
           animation: text-in 0.5s ease-in, crash-left 0.75s ease-out 0.5s;
@@ -239,10 +237,12 @@ h1, h2 {
   }
   60% {
     opacity: 0;
+    transform: translateY(0);
   }
   100% {
-    opacity: 0;
     height: 0;
+    opacity: 0;
+    transform: translateY(-5rem);
   }
 }
 
@@ -252,10 +252,12 @@ h1, h2 {
   }
   60% {
     opacity: 0;
+    transform: translateY(0);
   }
   100% {
-    opacity: 0;
     height: 0;
+    opacity: 0;
+    transform: translateY(-5rem);
   }
 }
 @-webkit-keyframes text-in {
@@ -263,7 +265,7 @@ h1, h2 {
     width: 0;
   }
   100% {
-    width: 17.5rem;
+    width: 16.5rem;
   }
 }
 @keyframes text-in {
@@ -271,29 +273,29 @@ h1, h2 {
     width: 0;
   }
   100% {
-    width: 17.5rem;
+    width: 16.5rem;
   }
 }
 @-webkit-keyframes crash-left {
   0% {
-    transform: skewX(0) scaleX(1);
+    transform: skew(0) scaleX(1);
   }
   33% {
-    transform: skewX(15deg) scaleX(0.75);
+    transform: skew(15deg) scaleX(0.75);
   }
   100% {
-    transform: translateX(0) skewX(0) scaleX(1);
+    transform: skew(0) scaleX(1);
   }
 }
 @keyframes crash-left {
   0% {
-    transform: skewX(0) scaleX(1);
+    transform: skew(0) scaleX(1);
   }
   33% {
-    transform: skewX(15deg) scaleX(0.75);
+    transform: skew(15deg) scaleX(0.75);
   }
   100% {
-    transform: translateX(0) skewX(0) scaleX(1);
+    transform: skew(0) scaleX(1);
   }
 }
 @-webkit-keyframes spin {
@@ -322,10 +324,7 @@ h1, h2 {
   23% {
     transform: translate(0, -1.25rem) rotate(10deg);
   }
-  58% {
-    transform: translate(0, -1.5rem) rotate(0);
-  }
-  100% {
+  43% {
     transform: translate(0, -1.5rem) rotate(0);
   }
 }
@@ -339,10 +338,7 @@ h1, h2 {
   23% {
     transform: translate(0, -1.25rem) rotate(10deg);
   }
-  58% {
-    transform: translate(0, -1.5rem) rotate(0);
-  }
-  100% {
+  43% {
     transform: translate(0, -1.5rem) rotate(0);
   }
 }
