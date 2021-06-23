@@ -231,6 +231,11 @@ h1, h2 {
 .footer .ohmyfood--small {
   font-size: 1.25rem;
 }
+.footer--anchored {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
 
 .how-to {
   padding: 2.5rem 1rem;
@@ -495,4 +500,20 @@ h1, h2 {
 .carte__order-button-container {
   display: flex;
   justify-content: center;
+}
+
+.e404 {
+  text-align: center;
+  padding: 2.5rem 1rem;
+}
+.e404 h1 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 3rem;
+  margin: 2.5rem 0;
+}
+.e404 a {
+  color: #9356dc;
+}
+.e404 a:hover {
+  text-decoration: underline;
 }

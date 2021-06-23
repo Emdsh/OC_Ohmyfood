@@ -31,4 +31,10 @@
     .ohmyfood--small {
         font-size: 1.25rem;
     }
+
+    &--anchored {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
 }
