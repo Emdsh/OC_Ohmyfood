@@ -1,0 +1,144 @@
+@use '../components' as *;
+
+@mixin circle {
+    width: 5rem;
+    height: 5rem;
+    border: .5rem solid white;
+    border-radius: 50%;
+    grid-area: circle;
+    transform: rotate(180deg);
+    animation: spin 1.5s ease-in-out infinite;
+}
+
+.loader {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    background-color: color(accent);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: baseline;
+    animation: loader .5s ease-in-out 2.5s forwards;
+
+    &__ohmyfood {
+        font-family: 'Shrikhand', sans-serif;
+        font-size: 3rem;
+        text-align: center;
+        width: 16.5rem;
+        color: white;
+        overflow: hidden;
+        white-space: nowrap;
+        transform-origin: bottom left;
+        animation: text-in .5s ease-in,
+                   crash-left .75s ease-out .5s;
+    }
+
+    &__circle {
+        margin-top: 2.5rem;
+        display: grid;
+        grid-template: "circle" 5rem / 5rem;
+
+        &--primary {
+            @include circle;
+            border-color: color(primary) transparent transparent;
+            animation-delay: .4s;
+        }
+        
+        &--secondary {
+            @include circle;
+            border-color: color(secondary) transparent transparent;
+            animation-delay: .2s;
+        }
+        
+        &--tertiary {
+            @include circle;
+            border-color: color(tertiary) transparent transparent;
+        }
+    }
+
+    &__pan {
+        width: 7.5rem;
+        color: color(accent, dark);
+        background-color: color(accent, dark);
+        border: 1rem solid color(accent, dark);
+        border-radius: 0 0 2rem 2rem;
+        transform: translate(0, -1.5rem);
+        transform-origin: top right;
+        animation: pan-shake 1.5s ease-in-out infinite;
+
+        &::after {
+            content: "";
+            width: 4.5rem;
+            height: .5rem;
+            border-radius: 0 .5rem .5rem 0;
+            background-color: color(accent, dark);
+            display: inline-block;
+            position: absolute;
+            transform: translate(6rem, -1rem);
+        }
+    }
+}
+
+@keyframes loader {
+    0% {
+        opacity: 1;
+    }
+    99% {
+        z-index: 9999;
+    }
+    100% {
+        opacity: 0;
+        z-index: -1;
+        visibility: hidden;
+    }
+}
+
+@keyframes text-in {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 16.5rem;
+    }
+}
+
+@keyframes crash-left {
+    0% {
+        transform: skew(0) scaleX(1);
+    }
+    33% {
+        transform: skew(15deg) scaleX(.75);
+    }
+    100% {
+        transform: skew(0) scaleX(1);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(540deg);
+    }
+}
+
+@keyframes pan-shake {
+    0% {
+        transform: translate(0, -1.5rem) rotate(0);
+    }
+    8% {
+        transform: translate(.5rem, -1.75rem) rotate(-5deg);
+    }
+    23% {
+        transform: translate(0, -1.25rem) rotate(10deg);
+    }
+    43% {
+        transform: translate(0, -1.5rem) rotate(0);
+    }
+}
