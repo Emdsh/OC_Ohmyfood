@@ -1,0 +1,21 @@
+@use '../utils/functions' as *;
+@use '../utils/mixins' as *;
+
+.e404 {
+    text-align: center;
+    @include area-padding;
+
+    h1 {
+        font-family: 'Shrikhand', sans-serif;
+        font-size: 3rem;
+        margin: 2.5rem 0;
+    }
+
+    a {
+        color: color(primary);
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
