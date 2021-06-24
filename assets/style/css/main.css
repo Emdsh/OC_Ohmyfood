@@ -538,6 +538,18 @@ h1, h2 {
 .restaurant h2 {
   padding-bottom: 1rem;
 }
+@media all and (min-width: 768px) {
+  .restaurant-flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-right: -1.5rem;
+  }
+  .restaurant-flex-child {
+    flex: 1 1 320px;
+    margin-right: 1.5rem;
+  }
+}
 
 .presentation-image img {
   width: 100%;

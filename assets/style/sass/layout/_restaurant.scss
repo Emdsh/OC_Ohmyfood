@@ -7,4 +7,18 @@
     h2 {
         padding-bottom: 1rem;
     }
+
+    @media all and (min-width: 768px) {
+        &-flex {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            margin-right: -1.5rem;
+
+            &-child {
+                flex: 1 1 320px;
+                margin-right: 1.5rem;
+            }
+        }
+    }
 }
