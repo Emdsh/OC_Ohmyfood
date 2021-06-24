@@ -46,4 +46,9 @@
             }
         }
     }
+
+    @media all and (min-width: 1024px) {
+        flex-basis: 35vw;
+        min-width: 400px;
+    }
 }

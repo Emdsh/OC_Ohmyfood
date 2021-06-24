@@ -520,6 +520,12 @@ h1, h2 {
   display: inline-block;
   text-align: center;
 }
+@media all and (min-width: 1024px) {
+  .how-to {
+    flex-basis: 35vw;
+    min-width: 400px;
+  }
+}
 
 .restaurant {
   background-color: #f4f4f4;
@@ -548,6 +554,12 @@ h1, h2 {
   .restaurant-flex-child {
     flex: 1 1 320px;
     margin-right: 1.5rem;
+  }
+}
+@media all and (min-width: 1024px) {
+  .restaurant {
+    flex-basis: 65vw;
+    background-color: white;
   }
 }
 
@@ -804,6 +816,12 @@ h1, h2 {
   justify-content: center;
 }
 
+@media all and (min-width: 1024px) {
+  .content {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
 .e404 {
   text-align: center;
   padding: 2.5rem 1rem;
