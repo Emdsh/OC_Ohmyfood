@@ -2,7 +2,7 @@
 
 .presentation-image {
     img {
-        width: 100vw;
+        width: 100%;
         height: 260px;
         object-fit: cover;
         object-position: center;
@@ -19,7 +19,7 @@
     &::after {
         content: "";
         background-color: color(accent, light);
-        width: 100vw;
+        width: 100%;
         height: 2.5rem;
         position: absolute;
         bottom: -2.5rem;
@@ -86,7 +86,7 @@
             border-radius: 1rem;
             margin-bottom: 1rem;
             max-height: 4.5rem;
-            max-width: calc(100vw - 2rem);
+            max-width: 100%;
             overflow: hidden;
             @include shadow;
 
@@ -111,7 +111,7 @@
                 }
 
                 & #{$menu}-text {
-                    min-width: calc((100vw - 2rem) - 4rem);
+                    min-width: calc(100% - 4rem);
                 }
             }
 
@@ -124,7 +124,7 @@
 
         &-text {
             padding: 1rem;
-            min-width: calc(100vw - 2rem);
+            min-width: 100%;
             transition: min-width .75s ease-in-out;
             
             label {
