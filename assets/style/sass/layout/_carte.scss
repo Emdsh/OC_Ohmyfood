@@ -168,4 +168,11 @@
             justify-content: center;
         }
     }
+    @media all and (min-width: 1024px) {
+        &-grid {
+            display: grid;
+            grid: "entrees plats desserts" auto / minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+            gap: 1rem;
+        }
+    }
 }
