@@ -435,6 +435,11 @@ h1, h2 {
     padding: 2.5rem 2rem;
   }
 }
+@media all and (min-width: 1024px) {
+  .footer {
+    padding: 2.5rem 3rem;
+  }
+}
 .footer__links {
   margin-top: 0.5rem;
 }
@@ -467,6 +472,11 @@ h1, h2 {
 @media all and (min-width: 768px) {
   .how-to {
     padding: 2.5rem 2rem;
+  }
+}
+@media all and (min-width: 1024px) {
+  .how-to {
+    padding: 2.5rem 3rem;
   }
 }
 .how-to h2 {
@@ -519,6 +529,11 @@ h1, h2 {
     padding: 2.5rem 2rem;
   }
 }
+@media all and (min-width: 1024px) {
+  .restaurant {
+    padding: 2.5rem 3rem;
+  }
+}
 .restaurant h2 {
   padding-bottom: 1rem;
 }
@@ -542,6 +557,11 @@ h1, h2 {
 @media all and (min-width: 768px) {
   .carte {
     padding: 2.5rem 2rem;
+  }
+}
+@media all and (min-width: 1024px) {
+  .carte {
+    padding: 2.5rem 3rem;
   }
 }
 .carte::after {
@@ -778,6 +798,11 @@ h1, h2 {
 @media all and (min-width: 768px) {
   .e404 {
     padding: 2.5rem 2rem;
+  }
+}
+@media all and (min-width: 1024px) {
+  .e404 {
+    padding: 2.5rem 3rem;
   }
 }
 .e404 h1 {
