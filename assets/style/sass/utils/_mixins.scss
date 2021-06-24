@@ -3,6 +3,10 @@
 
 @mixin area-padding {
     padding: 2.5rem 1rem;
+
+    @media all and (min-width: 768px) {
+        padding: 2.5rem 2rem;
+    }
 }
 
 @mixin shadow {

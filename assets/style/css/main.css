@@ -430,11 +430,16 @@ h1, h2 {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+@media all and (min-width: 768px) {
+  .footer {
+    padding: 2.5rem 2rem;
+  }
+}
 .footer__links {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 .footer__links li {
-  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
 }
 .footer a {
   color: white;
@@ -458,6 +463,11 @@ h1, h2 {
 
 .how-to {
   padding: 2.5rem 1rem;
+}
+@media all and (min-width: 768px) {
+  .how-to {
+    padding: 2.5rem 2rem;
+  }
 }
 .how-to h2 {
   padding-bottom: 1rem;
@@ -504,6 +514,11 @@ h1, h2 {
   background-color: #f4f4f4;
   padding: 2.5rem 1rem;
 }
+@media all and (min-width: 768px) {
+  .restaurant {
+    padding: 2.5rem 2rem;
+  }
+}
 .restaurant h2 {
   padding-bottom: 1rem;
 }
@@ -523,6 +538,11 @@ h1, h2 {
   background-color: #f4f4f4;
   border-radius: 2.5rem 2.5rem 0 0;
   padding: 2.5rem 1rem;
+}
+@media all and (min-width: 768px) {
+  .carte {
+    padding: 2.5rem 2rem;
+  }
 }
 .carte::after {
   content: "";
@@ -754,6 +774,11 @@ h1, h2 {
 .e404 {
   text-align: center;
   padding: 2.5rem 1rem;
+}
+@media all and (min-width: 768px) {
+  .e404 {
+    padding: 2.5rem 2rem;
+  }
 }
 .e404 h1 {
   font-family: "Shrikhand", sans-serif;
