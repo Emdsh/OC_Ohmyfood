@@ -1,3 +1,13 @@
+@use '../components/button';
+@use '../components/heart';
+@use '../components/loader';
+@use '../components/tile';
+
+@use '../layout/header';
+@use '../layout/how-to';
+@use '../layout/restaurants';
+@use '../layout/footer';
+
 @media all and (min-width: 1024px) {
     .content {
         display: flex;

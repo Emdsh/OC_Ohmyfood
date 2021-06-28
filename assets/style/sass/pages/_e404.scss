@@ -1,6 +1,9 @@
 @use '../utils/functions' as *;
 @use '../utils/mixins' as *;
 
+@use '../layout/header';
+@use '../layout/footer';
+
 .e404 {
     text-align: center;
     @include area-padding;
